@@ -53,5 +53,27 @@ bundle exec jekyll serve
 ## 기술 스택
 
 - Jekyll (GitHub Pages 호환)
-- Minima theme
+- Just the Docs theme (remote_theme, 왼쪽 사이드바 네비게이션)
 - GitHub Pages 자동 배포
+
+## 사이드바 네비게이션 수정
+
+Just the Docs 테마는 왼쪽에 사이드바 네비게이션을 제공합니다.
+
+페이지의 front matter에서 `nav_order` 값으로 사이드바 순서를 조정합니다:
+
+```yaml
+---
+layout: default
+title: 페이지 제목
+nav_order: 1  # 숫자가 작을수록 위에 표시
+permalink: /custom-url/
+---
+```
+
+새 페이지를 사이드바에 추가하려면:
+1. 루트 디렉토리에 `.md` 파일 생성
+2. Front matter에 `title`과 `nav_order` 추가
+3. `layout: default` 사용
+
+블로그 포스트는 사이드바에 표시되지 않으며, 홈 페이지와 글모음 페이지에서 접근할 수 있습니다.

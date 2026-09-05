@@ -1,0 +1,48 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// 포스트 메타 정보 스타일
+.post-meta {
+  color: #6c757d;
+  font-size: 0.9em;
+  margin-bottom: 1.5em;
+}
+
+// 포스트 네비게이션 스타일
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3em;
+  padding-top: 1em;
+  border-top: 1px solid #e1e4e8;
+}
+
+.post-nav a {
+  text-decoration: none;
+  color: #0366d6;
+  max-width: 45%;
+}
+
+.post-nav a:hover {
+  text-decoration: underline;
+}
+
+.post-nav-prev {
+  text-align: left;
+}
+
+.post-nav-next {
+  text-align: right;
+}
+
+// 홈페이지 최근 글 목록 스타일
+.home-posts-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.home-posts-list li {
+  margin-bottom: 0.5em;
+}

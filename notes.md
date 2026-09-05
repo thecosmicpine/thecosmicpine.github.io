@@ -1,10 +1,11 @@
 ---
-layout: page
-title: "notes 폴더"
+layout: default
+title: notes
+nav_order: 5
 permalink: /notes/
 ---
 
-## `/notes/` 글 목록 샘플
+# notes 폴더 글 목록
 
 `categories`에 `notes`가 들어간 글만 여기에 모입니다.
 

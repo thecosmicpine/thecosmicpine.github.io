@@ -4,25 +4,26 @@ description: >-
   개인 블로그 - 기술, 개발, 그리고 생각을 기록합니다.
 baseurl: ""
 url: "https://thecosmicpine.github.io"
-permalink: /:year/:month/:day/:title/
+permalink: /posts/:year-:month-:day-:title/
 
 # Build settings
-theme: minima
+remote_theme: just-the-docs/just-the-docs@v0.10.0
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-remote-theme
 
-# Minima theme settings
-minima:
-  skin: auto
+# Just-the-docs theme settings
+search_enabled: true
+heading_anchors: true
 
-# Navigation menu (Korean labels)
-header_pages:
-  - index.md
-  - about.md
-  - archive.md
-  - dev.md
-  - notes.md
+# Custom CSS
+aux_links:
+  "GitHub":
+    - "https://github.com/thecosmicpine/thecosmicpine.github.io"
+
+# Navigation structure (Korean labels handled in page front matter)
+# Pages use nav_order and parent properties for sidebar hierarchy
 
 # Exclude from processing
 exclude:
