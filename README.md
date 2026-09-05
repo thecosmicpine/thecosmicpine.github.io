@@ -2,7 +2,7 @@
 
 개인 블로그 - GitHub Pages + Jekyll
 
-**Live Site:** [https://sungwoon0922.github.io](https://sungwoon0922.github.io)
+**Live Site:** [https://hs-billion.github.io](https://hs-billion.github.io)
 
 ## 포스트 작성 방법
 
