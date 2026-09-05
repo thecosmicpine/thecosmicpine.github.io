@@ -1,10 +1,11 @@
 ---
-layout: page
-title: "dev 폴더"
+layout: default
+title: dev
+nav_order: 4
 permalink: /dev/
 ---
 
-## `/dev/` 글 목록 샘플
+# dev 폴더 글 목록
 
 GitHub Pages(Jekyll)에서는 `_posts/dev/` 폴더만으로 목록 URL이 생기지 않습니다.
 대신 **같은 이름 카테고리**(`categories: [dev]`) 글을 이 페이지에서 모아 보여줍니다.
