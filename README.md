@@ -2,7 +2,7 @@
 
 개인 블로그 - GitHub Pages + Jekyll
 
-**Live Site:** [https://hs-billion.github.io](https://hs-billion.github.io)
+**Live Site:** [https://thecosmicpine.github.io](https://thecosmicpine.github.io)
 
 ## 포스트 작성 방법
 
@@ -41,7 +41,7 @@ bundle exec jekyll serve
 
 방문자 통계는 GitHub 저장소 관리자만 확인할 수 있습니다:
 
-1. GitHub 저장소 페이지 접속: [https://github.com/hs-billion/hs-billion.github.io](https://github.com/hs-billion/hs-billion.github.io)
+1. GitHub 저장소 페이지 접속: [https://github.com/thecosmicpine/thecosmicpine.github.io](https://github.com/thecosmicpine/thecosmicpine.github.io)
 2. **Insights** 탭 클릭
 3. 왼쪽 메뉴에서 **Traffic** 선택
 4. 최근 14일간의 방문자 통계 확인:
