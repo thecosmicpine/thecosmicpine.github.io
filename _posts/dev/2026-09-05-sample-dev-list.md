@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "샘플-dev 폴더 목록용"
-date: 2026-09-05 15:00:00 +0900
+date: 2026-09-05 10:00:00 +0900
 categories: [dev]
 permalink: /tests/sample-dev-list/
 ---
