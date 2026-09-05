@@ -1,0 +1,29 @@
+# Site settings
+title: Sungwoon Lee
+description: >-
+  개인 블로그 - 기술, 개발, 그리고 생각을 기록합니다.
+baseurl: ""
+url: "https://sungwoon0922.github.io"
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Minima theme settings
+minima:
+  skin: auto
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor/
+
+# Encoding
+encoding: utf-8
+
+# Pagination
+paginate: 10
