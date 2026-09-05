@@ -10,4 +10,4 @@ permalink: /about/
 
 ### Contact
 
-- GitHub: [@sungwoon0922](https://github.com/sungwoon0922)
+- GitHub: [@hs-billion](https://github.com/hs-billion)
