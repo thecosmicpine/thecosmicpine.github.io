@@ -32,4 +32,3 @@ exclude:
 encoding: utf-8
 
 # Pagination
-paginate: 10
