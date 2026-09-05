@@ -5,10 +5,9 @@ nav_order: 4
 permalink: /dev/
 ---
 
-# dev 폴더 글 목록
+# dev 글 목록
 
-GitHub Pages(Jekyll)에서는 `_posts/dev/` 폴더만으로 목록 URL이 생기지 않습니다.
-대신 **같은 이름 카테고리**(`categories: [dev]`) 글을 이 페이지에서 모아 보여줍니다.
+`categories`에 `dev`가 들어간 글만 여기에 모입니다.
 
 {% assign posts = site.categories.dev %}
 {% if posts and posts.size > 0 %}
@@ -23,7 +22,3 @@ GitHub Pages(Jekyll)에서는 `_posts/dev/` 폴더만으로 목록 URL이 생기
 {% else %}
 <p>아직 `dev` 카테고리 글이 없습니다.</p>
 {% endif %}
-
----
-
-파일 위치 예시: `_posts/dev/YYYY-MM-DD-title.md` + front matter에 `categories: [dev]`
