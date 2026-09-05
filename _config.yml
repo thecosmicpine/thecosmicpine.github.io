@@ -21,6 +21,8 @@ header_pages:
   - index.md
   - about.md
   - archive.md
+  - dev.md
+  - notes.md
 
 # Exclude from processing
 exclude:
