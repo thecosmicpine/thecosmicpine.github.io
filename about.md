@@ -10,4 +10,4 @@ permalink: /about/
 
 ### Contact
 
-- GitHub: [@hs-billion](https://github.com/hs-billion)
+- GitHub: [@thecosmicpine](https://github.com/thecosmicpine)
