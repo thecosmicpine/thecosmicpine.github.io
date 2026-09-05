@@ -181,10 +181,6 @@ codila 글이 **다루지 않은** 부분.
 - `business-state.json`의 파일 위치·충돌·멀티 봇 공유 — 원문에 거의 없음
 - “수동 3회 후 Skill” — codila의 경험 규칙, 근거는 원문에 없음
 
-Whop 쪽 글([Whop × Grok/Cursor](https://whop.com/blog/spacexai-whop-grok/), [CLI 운영](https://whop.com/blog/run-business-with-cli/), [CLI 소개](https://whop.com/blog/cli/))은 같은 방향을 가리키지만, codila 원문을 대신하지는 않는다.
-
-손대 본다면 **sandbox 상품 1개 → `business-state.json` 5필드 → 비가역은 승인 패킷**부터가 무난하다.
-
 ---
 
 ## 메모로 남기는 것
