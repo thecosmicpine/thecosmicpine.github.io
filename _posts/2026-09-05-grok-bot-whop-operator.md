@@ -2,7 +2,7 @@
 layout: post
 title: "Grok Bot × Whop 사용 사례, 한 번에 안 읽혀서 풀어 본 메모"
 date: 2026-09-05 18:50:00 +0900
-categories: [notes]
+categories: ["Grok Bot"]
 permalink: /posts/2026-09-05-grok-bot-whop-operator/
 ---
 
