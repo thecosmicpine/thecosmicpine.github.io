@@ -7,4 +7,3 @@ permalink: /tests/cat-single/
 ---
 
 단일 카테고리 `categories: [개발]` 테스트.
-글모음에 카테고리 라벨이 보이는지, URL은 `/tests/cat-single/` 인지 확인.
