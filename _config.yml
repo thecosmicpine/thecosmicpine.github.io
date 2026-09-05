@@ -15,6 +15,12 @@ plugins:
 minima:
   skin: auto
 
+# Navigation menu (Korean labels)
+header_pages:
+  - index.md
+  - about.md
+  - archive.md
+
 # Exclude from processing
 exclude:
   - Gemfile

@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Home
+title: 홈
 ---
 
 ## 안녕하세요!
