@@ -1,4 +1,4 @@
-# Sungwoon Lee's Blog
+# TheCosmicPine
 
 개인 블로그 - GitHub Pages + Jekyll
 
