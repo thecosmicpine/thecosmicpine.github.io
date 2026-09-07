@@ -18,7 +18,7 @@ Shraddha Bharuka(`@BharukaShraddha`)가 북마크해 두라는 [AI·ML·LLM·에
 
 | # | 이름 | 레포 | 한 줄 |
 |---|---|---|---|
-| 1 | Python - 100 Days | [jackfrued/Python-100-Days](https://github.com/jackfrued/Python-100-Days) | 기초·데이터 분석·웹까지 100일 파이썬 경로 |
+| 1 | Python - 100 Days | [jackfrued/Python-100-Days](https://github.com/jackfrued/Python-100-Days) | 기초·데이터 분석·웹까지 100일 파이썬 경로. **원문은 중국어** — 영어 대안: [tamnd/Python-100-Days-English](https://github.com/tamnd/Python-100-Days-English) |
 | 2 | Generative AI for Beginners | [microsoft/generative-ai-for-beginners](https://github.com/microsoft/generative-ai-for-beginners) | LLM·프롬프트·RAG·에이전트·파인튜닝 입문 |
 | 3 | LLMs From Scratch | [rasbt/LLMs-from-scratch](https://github.com/rasbt/LLMs-from-scratch) | 토큰화부터 트랜스포머·학습까지 직접 만들기 |
 | 4 | Machine Learning for Beginners | [microsoft/ML-For-Beginners](https://github.com/microsoft/ML-For-Beginners) | 고전 ML 12주·26레슨 커리큘럼 |
@@ -33,7 +33,7 @@ Shraddha Bharuka(`@BharukaShraddha`)가 북마크해 두라는 [AI·ML·LLM·에
 
 원문이 제안하는 매핑이다.
 
-- Python → `Python-100-Days`
+- Python → `Python-100-Days` (중국어) / 영어 대안 [`Python-100-Days-English`](https://github.com/tamnd/Python-100-Days-English)
 - ML → `ML-For-Beginners`
 - AI 기초 → `AI-For-Beginners`
 - LLMs → `LLMs-from-scratch`
