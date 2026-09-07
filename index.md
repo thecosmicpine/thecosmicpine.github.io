@@ -5,12 +5,6 @@ nav_order: 1
 permalink: /
 ---
 
-# 안녕하세요!
-
-TheCosmicPine에 오신 것을 환영합니다.
-
-이곳에서 개발, 기술, 그리고 일상의 생각들을 공유합니다.
-
 ## 최근 글
 
 {% assign recent_posts = site.posts | slice: 0, 5 %}
