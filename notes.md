@@ -1,15 +1,15 @@
 ---
 layout: default
-title: notes
+title: Notes
 nav_order: 5
 permalink: /notes/
 ---
 
-# notes 폴더 글 목록
+# Notes 글 목록
 
-`categories`에 `notes`가 들어간 글만 여기에 모입니다.
+`categories`에 `Notes`가 들어간 글만 여기에 모입니다.
 
-{% assign posts = site.categories.notes %}
+{% assign posts = site.categories.Notes %}
 {% if posts and posts.size > 0 %}
 <ul>
 {% for post in posts %}
@@ -20,5 +20,5 @@ permalink: /notes/
 {% endfor %}
 </ul>
 {% else %}
-<p>아직 `notes` 카테고리 글이 없습니다.</p>
+<p>아직 `Notes` 카테고리 글이 없습니다.</p>
 {% endif %}
