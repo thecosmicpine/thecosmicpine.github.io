@@ -1,22 +1,62 @@
-// 포스트 메타 정보 스타일
+// Zabbix 최신 블루 — Just the Docs 레이아웃 유지, 컬러/폰트/폭만
+$body-font-family: "Segoe UI", Tahoma, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+$mono-font-family: Consolas, Menlo, "Courier New", monospace;
+
+.main-content-wrap {
+  max-width: 1000px;
+}
+
+.site-header,
+.site-title {
+  color: #ffffff;
+}
+
+.site-nav .nav-list-link,
+.site-nav .nav-list-expander {
+  color: #ebeef0;
+}
+
+.site-nav .nav-list-link:hover,
+.site-nav .nav-list-link.active {
+  color: #ffffff;
+  background-image: linear-gradient(90deg, #0a3c5b 0%, rgba(10, 60, 91, 0) 100%);
+}
+
+.site-stats {
+  margin-top: 0.65rem;
+  padding-top: 0.55rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-family: $mono-font-family;
+  font-size: 0.72rem;
+  line-height: 1.5;
+  color: #8cb2ca;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.site-stats strong {
+  color: #87d1ff;
+  font-weight: 700;
+}
+
 .post-meta {
-  color: #6c757d;
+  color: #768d99;
   font-size: 0.9em;
   margin-bottom: 1.5em;
 }
 
-// 포스트 네비게이션 스타일
 .post-nav {
   display: flex;
   justify-content: space-between;
   margin-top: 3em;
   padding-top: 1em;
-  border-top: 1px solid #e1e4e8;
+  border-top: 1px solid #dfe4e7;
 }
 
 .post-nav a {
   text-decoration: none;
-  color: #0366d6;
+  color: #0275b8;
   max-width: 45%;
 }
 
@@ -24,15 +64,41 @@
   text-decoration: underline;
 }
 
-.post-nav-prev {
-  text-align: left;
+.post-nav-prev { text-align: left; }
+.post-nav-next { text-align: right; }
+
+.post-content h2 {
+  border-bottom: 1px solid #dfe4e7;
+  padding-bottom: 0.25rem;
 }
 
-.post-nav-next {
-  text-align: right;
+.post-content pre {
+  border-left: 3px solid #1e87e3;
+  background: #092637;
+  color: #ebeef0;
 }
 
-// 홈페이지 최근 글 목록 스타일
+.post-content pre code {
+  background: transparent;
+  color: inherit;
+}
+
+.post-content table th {
+  color: #0275b8;
+  background: #f8f8f8;
+}
+
+.post-comments {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #dfe4e7;
+}
+
+.post-comments h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
 .home-posts-list {
   list-style: none;
   padding-left: 0;

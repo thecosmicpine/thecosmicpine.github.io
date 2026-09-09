@@ -1,0 +1,24 @@
+// Zabbix 7 blue theme tokens → Just the Docs variables
+$color-scheme: light;
+
+$white: #ffffff;
+$grey-dk-000: #768d99;
+$grey-dk-100: #1f2c33;
+$grey-dk-300: #1f2c33;
+$grey-lt-000: #ebeef0;
+
+$body-background-color: #ebeef0;
+$body-heading-color: #1f2c33;
+$body-text-color: #1f2c33;
+$link-color: #0275b8;
+$nav-child-link-color: #768d99;
+$sidebar-color: #0a466a;
+$base-button-color: #e8f5ff;
+$btn-primary-color: #0275b8;
+$code-background-color: #f8f8f8;
+$feedback-color: #dfe4e7;
+$table-background-color: #ffffff;
+$search-background-color: #ffffff;
+$search-result-preview-color: #768d99;
+
+@import "./vendor/OneLightJekyll/syntax";

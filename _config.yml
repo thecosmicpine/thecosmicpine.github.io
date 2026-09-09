@@ -17,6 +17,9 @@ plugins:
 search_enabled: true
 heading_anchors: true
 
+# Zabbix 최신 블루 컬러 (Just the Docs 레이아웃 유지)
+color_scheme: zabbix
+
 # Custom CSS
 aux_links:
   "GitHub":
@@ -31,8 +34,38 @@ exclude:
   - Gemfile.lock
   - README.md
   - vendor/
+  - preview/
 
 # Encoding
 encoding: utf-8
 
 # Pagination
+
+# 경량 방문 카운터 (사이드바 타이틀 아래)
+visitor_counter:
+  enabled: true
+  script_url: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+
+# 댓글 (Utterances — GitHub Issues)
+comments:
+  enabled: true
+
+utterances:
+  enabled: true
+  repo: "thecosmicpine/thecosmicpine.github.io"
+  issue_term: "pathname"
+  theme: "preferred-color-scheme"
+
+giscus:
+  enabled: false
+  repo: "thecosmicpine/thecosmicpine.github.io"
+  repo_id: "R_kgDOUO6A7Q"
+  category: "General"
+  category_id: ""
+  mapping: "pathname"
+  strict: "0"
+  reactions_enabled: "1"
+  emit_metadata: "0"
+  input_position: "bottom"
+  theme: "preferred-color-scheme"
+  lang: "ko"
