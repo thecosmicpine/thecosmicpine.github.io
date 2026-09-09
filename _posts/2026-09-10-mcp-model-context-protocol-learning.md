@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MCP(Model Context Protocol) — 학습 메모"
-date: 2026-09-10 00:10:00 +0900
+date: 2026-09-09 23:50:00 +0900
 categories: ["Notes"]
 permalink: /posts/2026-09-10-mcp-model-context-protocol-learning/
 ---
