@@ -1,10 +1,14 @@
 {%- if site.visitor_counter.enabled -%}
-<div class="site-stats" aria-label="방문자 통계">
-  <span>Site PV: <strong id="busuanzi_value_site_pv">-</strong></span>
-  <span>Site UV: <strong id="busuanzi_value_site_uv">-</strong></span>
-  {%- if page.layout == "post" or page.url contains '/posts/' -%}
-  <span>Page PV: <strong id="busuanzi_value_page_pv">-</strong></span>
-  {%- endif -%}
-  <script async src="{{ site.visitor_counter.script_url }}"></script>
-</div>
+<ul class="nav-list site-stats-list" aria-label="방문자 통계">
+  <li class="nav-list-item">
+    <div class="nav-list-link site-stats">
+      <span>Site PV: <strong id="busuanzi_value_site_pv">-</strong></span>
+      <span>Site UV: <strong id="busuanzi_value_site_uv">-</strong></span>
+      {%- if page.layout == "post" or page.url contains '/posts/' -%}
+      <span>Page PV: <strong id="busuanzi_value_page_pv">-</strong></span>
+      {%- endif -%}
+      <script async src="{{ site.visitor_counter.script_url }}"></script>
+    </div>
+  </li>
+</ul>
 {%- endif -%}
