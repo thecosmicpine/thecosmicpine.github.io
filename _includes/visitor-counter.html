@@ -5,6 +5,6 @@
   {%- if page.layout == "post" or page.url contains '/posts/' -%}
   <span>Page PV: <strong id="busuanzi_value_page_pv">-</strong></span>
   {%- endif -%}
+  <script async src="{{ site.visitor_counter.script_url }}"></script>
 </div>
-<script async src="{{ site.visitor_counter.script_url }}"></script>
 {%- endif -%}
