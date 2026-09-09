@@ -17,9 +17,7 @@ plugins:
 search_enabled: true
 heading_anchors: true
 
-# Zabbix 최신 블루 컬러 (Just the Docs 레이아웃 유지)
-color_scheme: zabbix
-
+# Zabbix 블루는 _sass/custom/custom.scss 오버라이드 (레이아웃 유지)
 # Custom CSS
 aux_links:
   "GitHub":
@@ -41,7 +39,7 @@ encoding: utf-8
 
 # Pagination
 
-# 경량 방문 카운터 (사이드바 타이틀 아래)
+# 경량 방문 카운터 (사이드바 메뉴 하단)
 visitor_counter:
   enabled: true
   script_url: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
