@@ -55,40 +55,39 @@ a {
   box-sizing: border-box;
   width: 100%;
   flex: 0 0 auto;
-  align-self: flex-end; // side-bar(align-items:flex-end)와 함께 메뉴 컬럼 우측 정렬
+  align-self: flex-end;
 }
 
 @media (min-width: 66.5rem) {
   .site-stats-panel {
-    width: 16.5rem; // = .site-nav / $nav-width
+    width: 16.5rem;
   }
 }
 
-.site-stats {
-  box-sizing: border-box;
-  width: 100%;
+// 패딩은 테마 .nav-list-link 규칙을 그대로 사용 (메뉴명과 동일 시작선)
+.site-stats-list {
   margin: 0;
-  padding-top: 0.55rem;
-  padding-bottom: 0.55rem;
-  padding-left: 1rem; // = .nav-list-link
-  padding-right: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
-  font-family: $mono-font-family;
-  font-size: 0.72rem;
-  line-height: 1.5;
-  color: #8cb2ca;
+}
+
+.site-stats.nav-list-link {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.15rem;
-  text-align: left;
+  min-height: auto;
+  line-height: 1.45;
+  cursor: default;
+  font-family: $mono-font-family;
+  font-size: 0.72rem;
+  color: #8cb2ca;
+  text-decoration: none;
 }
 
-@media (min-width: 50rem) {
-  .site-stats {
-    padding-left: 2rem; // = .nav-list-link (md+)
-    padding-right: 2rem;
-  }
+.site-stats.nav-list-link:hover,
+.site-stats.nav-list-link:active {
+  color: #8cb2ca;
+  background-image: none;
 }
 
 .site-stats strong {
