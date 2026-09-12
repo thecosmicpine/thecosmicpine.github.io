@@ -1,5 +1,5 @@
 {%- comment -%}
- Just the Docs sidebar (v0.10.0) + visitor stats panel aligned with nav column
+ Just the Docs sidebar (v0.10.0) + tags under nav + visitor stats
 {%- endcomment -%}
 
 <div class="side-bar">
@@ -11,6 +11,8 @@
   </div>
 
   {% include_cached components/site_nav.html %}
+
+  {% include tag-nav.html %}
 
   <div class="site-stats-panel">
     {% include visitor-counter.html %}
