@@ -3,7 +3,7 @@ layout: post
 title: "Claude가 이미 할 수 있는 것들 — 기능·프롬프트 학습 메모"
 date: 2026-09-13 00:50:47 +0900
 categories: ["Claude"]
-tags: ["claude", "prompts", "learning", "tools"]
+tags: ["learning", "agents", "tools", "harness", "skills"]
 permalink: /posts/2026-09-13-claude-features-most-people-miss/
 ---
 
