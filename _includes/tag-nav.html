@@ -1,0 +1,16 @@
+{%- comment -%} Sidebar tag chips under main nav {%- endcomment -%}
+{% assign tag_keys = site.tags | sort %}
+{% if tag_keys.size > 0 %}
+<nav class="site-tag-panel" aria-label="Tags">
+  <div class="site-tag-heading nav-list-link">태그</div>
+  <ul class="site-tag-list">
+  {% for tag in tag_keys %}
+    {% assign tag_name = tag[0] %}
+    <li>
+      <a class="site-tag-chip" href="{{ '/tags/' | relative_url }}#{{ tag_name | slugify }}">{{ tag_name }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+  <a class="site-tag-all nav-list-link" href="{{ '/tags/' | relative_url }}">모든 태그</a>
+</nav>
+{% endif %}

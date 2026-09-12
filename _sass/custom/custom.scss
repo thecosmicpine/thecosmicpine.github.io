@@ -162,3 +162,84 @@ a {
 .home-posts-list li {
   margin-bottom: 0.5em;
 }
+
+// Tags under sidebar nav
+.site-tag-panel {
+  box-sizing: border-box;
+  width: 100%;
+  flex: 0 0 auto;
+  padding: 0.5rem 0 0.25rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+@media (min-width: 66.5rem) {
+  .site-tag-panel {
+    width: 16.5rem;
+  }
+}
+
+.site-tag-heading.nav-list-link {
+  cursor: default;
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8cb2ca;
+}
+
+.site-tag-heading.nav-list-link:hover {
+  background-image: none;
+  color: #8cb2ca;
+}
+
+.site-tag-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.25rem 1rem 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.site-tag-chip {
+  display: inline-block;
+  padding: 0.15rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: #ebeef0;
+  background: rgba(255, 255, 255, 0.12);
+  text-decoration: none;
+}
+
+.site-tag-chip:hover {
+  color: #ffffff;
+  background: rgba(135, 209, 255, 0.25);
+  text-decoration: none;
+}
+
+.site-tag-all.nav-list-link {
+  font-size: 0.75rem;
+  color: #87d1ff;
+}
+
+.post-tags {
+  margin: -0.75em 0 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.post-tag {
+  display: inline-block;
+  padding: 0.15rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #0275b8;
+  background: #eef6fb;
+  text-decoration: none;
+}
+
+.post-tag:hover {
+  background: #d9eef9;
+  text-decoration: none;
+}
