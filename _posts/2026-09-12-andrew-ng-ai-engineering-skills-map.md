@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Andrew Ng — AI Engineering Skills Map (문서 성격 정제)"
-date: 2026-09-12 15:59:58 +0900
+title: "Andrew Ng — AI Engineering Skills Map"
+date: 2026-09-12 16:02:24 +0900
 categories: ["Notes"]
 permalink: /posts/2026-09-12-andrew-ng-ai-engineering-skills-map/
 ---
