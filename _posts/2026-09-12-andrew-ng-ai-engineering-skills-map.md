@@ -1,14 +1,14 @@
 ---
 layout: post
 title: "Andrew Ng — AI Engineering Skills Map"
-date: 2026-09-12 16:02:24 +0900
+date: 2026-09-12 16:02:44 +0900
 categories: ["Notes"]
 permalink: /posts/2026-09-12-andrew-ng-ai-engineering-skills-map/
 ---
 
 **한 줄:** 이 글은 설치 가이드가 아니라 **「빌드를 잡는」 AI Engineering 스킬 맵**이다. 네 축은 빌드 루프·제품 결정·소통·높은 주체성이다.
 
-Andrew Ng(@AndrewYNg)의 X 아티클 [AI Engineering Skills Map: Shaping the build](https://x.com/i/article/2098450134883594240)(2026-09-11)을 **문서 성격에 맞게** 다시 잡은 메모다.  
+Andrew Ng(@AndrewYNg)의 X 아티클 [AI Engineering Skills Map: Shaping the build](https://x.com/i/article/2098450134883594240)(2026-09-11)을 **문서 성격에 맞게** 다시 잡은 메모다. 
 **초안 작성·문장 정리에 AI를 사용했다.** 해석은 작성자 것이며 원문과 다를 수 있다. 아래 예시는 원문에 나온 것만이다.
 
 ## 이 문서가 밀어주는 장르
@@ -138,4 +138,4 @@ Andrew Ng(@AndrewYNg)의 X 아티클 [AI Engineering Skills Map: Shaping the bui
 - 소개 포스트: https://x.com/AndrewYNg/status/2098459474608672916
 - 작성자: Andrew Ng — Coursera 공동창업, Stanford CS adjunct, 전 Baidu AI / Google Brain
 
-*문서 성격 정제 메모. AI 보조 작성.*
+*스킬 맵 정리. AI 보조 작성.*
