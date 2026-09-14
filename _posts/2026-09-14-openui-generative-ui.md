@@ -2,7 +2,7 @@
 layout: post
 title: "텍스트로 끝나지 않는 AI 답변 — OpenUI"
 date: 2026-09-14 21:07:00 +0900
-categories: ["notes"]
+categories: ["Tool"]
 permalink: /posts/2026-09-14-openui-generative-ui/
 ---
 
