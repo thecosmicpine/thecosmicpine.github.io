@@ -13,7 +13,6 @@ AI의 답변은 꼭 문장으로 끝나야 할까. [OpenUI](https://github.com/t
 - 출처: https://x.com/trendtech33566/status/2099438145494499525
 - 코드: https://github.com/thesysdev/openui
 - 문서·Playground: https://www.openui.com
-- 원문 메모: `초안/원문/2026-09-14-openui-generative-ui.md`
 
 ## 이 문서가 다루는 문제
 
