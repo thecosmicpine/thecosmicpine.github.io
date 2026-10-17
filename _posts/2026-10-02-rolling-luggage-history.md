@@ -2,7 +2,7 @@
 layout: post
 title: "바퀴 달린 가방이 공항에 자리 잡기까지"
 date: 2026-10-02 10:14:00 +0900
-categories: ["발견"]
+categories: ["과학의 뒷이야기"]
 permalink: /posts/2026-10-02-rolling-luggage-history/
 ---
 
