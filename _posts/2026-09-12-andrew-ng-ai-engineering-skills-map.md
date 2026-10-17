@@ -4,6 +4,7 @@ title: "Andrew Ng의 AI Engineering 스킬 맵: 빌드를 주도하는 법"
 date: 2026-09-12 15:51:21 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-09-12-andrew-ng-ai-engineering-skills-map/
+description: "Andrew Ng이 제시한 AI 엔지니어링 스킬 맵을 실제 프로젝트에 적용하는 관점에서 다시 정리했다."
 ---
 
 [Andrew Ng의 X 아티클](https://x.com/i/article/2098450134883594240)을 학습과 적용에 맞게 다시 구성한 기술 문서다. 원문의 주장·근거·사례·한계를 보존하되, 내용을 실제 프로젝트에서 판단하고 점검하기 쉬운 순서로 다시 짰다.

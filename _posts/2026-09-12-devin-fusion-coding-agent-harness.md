@@ -4,6 +4,7 @@ title: "Devin Fusion — Lead+Sidekick 하네스가 가리키는 것"
 date: 2026-09-12 14:39:12 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-09-12-devin-fusion-coding-agent-harness/
+description: "Devin Fusion의 Lead와 Sidekick 구조가 코딩 에이전트 하네스 설계에 대해 무엇을 말해 주는지 정리했다."
 ---
 
 Cognition이 공개한 [Introducing Fusion in Devin Desktop & CLI](https://cognition.com/blog/local-fusion)를 학습과 재현에 맞게 다시 구성한 기술 문서다. 원문의 주장·근거·사례·한계를 보존하되 목차는 개념이 쌓이는 순서로 다시 짰다.

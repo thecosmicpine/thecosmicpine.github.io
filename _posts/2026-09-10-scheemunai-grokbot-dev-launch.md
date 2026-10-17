@@ -4,6 +4,7 @@ title: "grokbot.dev — Grok Bot의 다음 쓰임을 찾는 디렉터리"
 date: 2026-09-10 22:26:00 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-09-10-scheemunai-grokbot-dev-launch/
+description: "Grok Bot 활용 사례를 모은 디렉터리 grokbot.dev가 무엇을 보여 주는지, 공개 사이트에서 확인한 내용과 함께 정리했다."
 ---
 
 [@scheemunai](https://x.com/scheemunai/status/2092299955071242527)의 grokbot.dev 출시 게시물을 학습과 재현에 맞게 다시 구성한 기술 문서다. 원문의 주장과 현재 공개 사이트에서 확인할 수 있는 범위를 구분해 정리했다.

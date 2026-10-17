@@ -5,6 +5,8 @@ date: 2026-10-16 11:50:00 +0900
 categories: ["과학의 뒷이야기"]
 tags: ["양파눈물", "최루인자", "주방과학", "생활과학"]
 permalink: /posts/2026-10-16-onion-tears-chemistry/
+description: "양파를 썰다 보면 몇 번 칼질하지 않아도 눈이 따가워지고 눈물이 맺힌다. 눈물을 만드는 물질이 양파 속에 미리 들어 있는 게 아니라 칼이 닿는 순간 만들어진다는 것을 알면, 어떤 '눈물 안 나는 요령'이 원리에 맞고 어떤 것은 근거가 약한지 스스로 가려 쓸 수 있다."
+image: /assets/img/posts/2026-10-16-onion-tears.png
 ---
 
 ![도마 위 양파와 칼](/assets/img/posts/2026-10-16-onion-tears.png)

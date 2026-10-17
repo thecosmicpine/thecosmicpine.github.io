@@ -4,6 +4,7 @@ title: "OpenAI Dots, ChatGPT 안의 '상시 비서'는 무엇이 다를까"
 date: 2026-10-14 20:00:00 +0900
 categories: ["Dots"]
 permalink: /posts/2026-10-14-openai-dots-always-on-assistant/
+description: "ChatGPT에 질문하고 답을 받는 데 익숙한 사람이라면 한 번쯤 이런 생각을 했을 것이다. \"대답만 하지 말고 이 일을 그냥 맡아서 끝내 주면 좋겠다.\" OpenAI가 9월 29일 개발자 행사에서 내놓은 Dots는 바로 그 지점을 겨냥한 서비스다."
 ---
 
 ChatGPT에 질문하고 답을 받는 데 익숙한 사람이라면 한 번쯤 이런 생각을 했을 것이다. "대답만 하지 말고 이 일을 그냥 맡아서 끝내 주면 좋겠다." OpenAI가 9월 29일 개발자 행사에서 내놓은 Dots는 바로 그 지점을 겨냥한 서비스다. 이 글을 읽고 나면 Dots가 기존 ChatGPT와 무엇이 다른지, 누가 쓸 수 있는지, 처음 맡길 때 무엇을 조심해야 하는지 정리할 수 있다.

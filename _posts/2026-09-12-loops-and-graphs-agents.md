@@ -5,6 +5,7 @@ date: 2026-09-12 19:35:14 +0900
 categories: ["AI와 기술"]
 tags: ["agents", "loops", "graphs", "harness"]
 permalink: /posts/2026-09-12-loops-and-graphs-agents/
+description: "에이전트를 계속 지켜보지 않고 마지막 승인만 남기려면 루프와 그래프를 어떻게 짜야 하는지 정리한 학습 노트다."
 ---
 
 **한 줄:** 루프는 **한 단위를 스스로 고치게** 하고, 그래프는 **어떤 단위가 존재할지** 정한다. 사람은 중간 검열이 아니라 **머지(승인)** 에만 선다.

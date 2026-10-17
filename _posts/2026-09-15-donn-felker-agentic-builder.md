@@ -4,6 +4,7 @@ title: "실행이 싸질 때 — Agentic Builder"
 date: 2026-09-15 15:10:00 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-09-15-donn-felker-agentic-builder/
+description: "코드 실행 비용이 싸지면 개발자의 일은 어떻게 바뀌는가. Donn Felker가 말한 에이전트형 빌더의 개념을 정리했다."
 ---
 
 [@donnfelker](https://x.com/donnfelker)의 X 아티클 [The Evaporation of Software Engineering (and the Rise of the Agentic Builder)](https://x.com/donnfelker/status/2099442539187069189)을 학습과 실무 적용에 맞게 다시 구성한 기술 문서다. 원문의 주장과 사례를 유지하되, 실행 비용이 낮아진 환경에서 어떤 역량을 갖춰야 하는지 이해하기 쉬운 순서로 정리했다.

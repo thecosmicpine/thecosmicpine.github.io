@@ -4,6 +4,7 @@ title: "텍스트로 끝나지 않는 AI 답변 — OpenUI"
 date: 2026-09-14 21:07:00 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-09-14-openui-generative-ui/
+description: "AI 답변을 글 대신 차트·표·입력 폼 같은 화면으로 바꾸는 오픈소스 OpenUI가 어떻게 동작하는지 정리했다."
 ---
 
 AI의 답변은 꼭 문장으로 끝나야 할까. [OpenUI](https://github.com/thesysdev/openui)는 모델의 출력을 차트·표·폼 같은 **상호작용 가능한 화면**으로 바꾸는 MIT 라이선스의 Generative UI 프레임워크다.[1][2][7]

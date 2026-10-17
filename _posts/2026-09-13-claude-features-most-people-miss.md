@@ -5,6 +5,7 @@ date: 2026-09-13 00:50:47 +0900
 categories: ["Claude"]
 tags: ["learning", "agents", "tools", "harness", "skills"]
 permalink: /posts/2026-09-13-claude-features-most-people-miss/
+description: "많은 사람이 모르고 지나치는 Claude의 기능과 프롬프트 활용법을 쓰임새별로 정리했다."
 ---
 
 **한 줄:** Claude를 “채팅창에 질문하는 도구”로만 쓰면, 원문이 말하는 **Projects·Artifacts·Thinking·Memory·역할·브라우저/데스크탑·스케줄·Skills·Code·Design·캐시** 층을 거의 안 쓴다. 이 메모는 지도를 학습용으로 풀고, **문서 층 vs 구조적 하네스** 구분과 **핸즈온 시나리오**까지 붙인다.
