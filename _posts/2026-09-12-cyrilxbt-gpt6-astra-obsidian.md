@@ -2,7 +2,7 @@
 layout: post
 title: "GPT-6 Astra와 Obsidian vault: 추론 깊이와 검색을 함께 설계하기"
 date: 2026-09-12 17:51:20 +0900
-categories: ["Tool"]
+categories: ["AI와 기술"]
 permalink: /posts/2026-09-12-cyrilxbt-gpt6-astra-obsidian/
 ---
 

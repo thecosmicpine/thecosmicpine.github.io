@@ -2,7 +2,7 @@
 layout: post
 title: "헤르메스 에이전트 — 자가 발전이 핵심인 이유"
 date: 2026-09-08 20:40:00 +0900
-categories: ["Notes"]
+categories: ["AI와 기술"]
 tags: ["hermes", "agents", "memory", "skills"]
 permalink: /posts/2026-09-08-hermes-agent-self-improving/
 ---

@@ -2,7 +2,7 @@
 layout: post
 title: "해고 뒤 30일 내 3천 달러를 만든다면: Reddit에서 KDP까지"
 date: 2026-09-10 22:25:00 +0900
-categories: ["Notes"]
+categories: ["돈과 산업"]
 permalink: /posts/2026-09-10-manu-sisti-layoff-kdp-ebook-30d/
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "철 1톤 — 도나우강에 잠들어 있던 2,200년 전의 공급망"
 date: 2026-09-29 15:28:00 +0900
-categories: ["Notes"]
+categories: ["과학의 뒷이야기"]
 permalink: /posts/2026-09-29-danube-iron-ingots-supply-chain/
 ---
 

@@ -2,7 +2,7 @@
 layout: post
 title: "Text-to-SQL이 막힌 자리 — 분석 에이전트의 문맥 3층"
 date: 2026-09-16 23:15:00 +0900
-categories: ["Notes"]
+categories: ["Claude"]
 permalink: /posts/2026-09-16-claude-code-analysis-agent-context-harness/
 ---
 

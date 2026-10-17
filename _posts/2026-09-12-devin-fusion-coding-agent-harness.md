@@ -2,7 +2,7 @@
 layout: post
 title: "Devin Fusion — Lead+Sidekick 하네스가 가리키는 것"
 date: 2026-09-12 14:39:12 +0900
-categories: ["Tool"]
+categories: ["AI와 기술"]
 permalink: /posts/2026-09-12-devin-fusion-coding-agent-harness/
 ---
 

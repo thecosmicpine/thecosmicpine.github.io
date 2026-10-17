@@ -2,7 +2,7 @@
 layout: post
 title: "MCP(Model Context Protocol) — 연결의 표준"
 date: 2026-09-09 23:50:00 +0900
-categories: ["Notes"]
+categories: ["AI와 기술"]
 tags: ["mcp", "agents", "protocol", "tools"]
 permalink: /posts/2026-09-10-mcp-model-context-protocol-learning/
 ---

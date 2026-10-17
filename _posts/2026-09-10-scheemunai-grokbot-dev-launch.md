@@ -2,7 +2,7 @@
 layout: post
 title: "grokbot.dev — Grok Bot의 다음 쓰임을 찾는 디렉터리"
 date: 2026-09-10 22:26:00 +0900
-categories: ["dev"]
+categories: ["AI와 기술"]
 permalink: /posts/2026-09-10-scheemunai-grokbot-dev-launch/
 ---
 

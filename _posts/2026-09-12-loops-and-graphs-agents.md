@@ -2,7 +2,7 @@
 layout: post
 title: "Loops and Graphs — 마지막 승인만 남기는 에이전트 구조"
 date: 2026-09-12 19:35:14 +0900
-categories: ["Notes"]
+categories: ["AI와 기술"]
 tags: ["agents", "loops", "graphs", "harness"]
 permalink: /posts/2026-09-12-loops-and-graphs-agents/
 ---
