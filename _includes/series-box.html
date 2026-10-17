@@ -1,0 +1,13 @@
+{%- assign series_posts = site.posts | where: "series", page.series | sort: "series_order" -%}
+{%- if series_posts.size > 1 -%}
+<nav class="series-box" aria-label="연재">
+  <p class="series-title">연재 · {{ page.series }} <span>({{ series_posts.size }}편)</span></p>
+  <ol>
+  {%- for p in series_posts -%}
+    <li{% if p.url == page.url %} class="is-current" aria-current="page"{% endif %}>
+      {%- if p.url == page.url -%}{{ p.title | escape }}{%- else -%}<a href="{{ p.url | relative_url }}">{{ p.title | escape }}</a>{%- endif -%}
+    </li>
+  {%- endfor -%}
+  </ol>
+</nav>
+{%- endif -%}

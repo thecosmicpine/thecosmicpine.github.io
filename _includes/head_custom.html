@@ -1,3 +1,17 @@
-{% comment %} Google AdSense Auto ads {% endcomment %}
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7287072613296683"
+{%- if site.adsense.client and site.adsense.client != "" -%}
+{% comment %} Google AdSense 자동 광고 {% endcomment %}
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client={{ site.adsense.client }}"
      crossorigin="anonymous"></script>
+{%- endif -%}
+{%- if site.site_verification.google != "" %}
+<meta name="google-site-verification" content="{{ site.site_verification.google }}">
+{%- endif -%}
+{%- if site.site_verification.naver != "" %}
+<meta name="naver-site-verification" content="{{ site.site_verification.naver }}">
+{%- endif -%}
+{%- if site.site_verification.bing != "" %}
+<meta name="msvalidate.01" content="{{ site.site_verification.bing }}">
+{%- endif %}
+<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/feed.xml' | absolute_url }}">
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">

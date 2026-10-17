@@ -12,11 +12,12 @@
 
   {% include_cached components/site_nav.html %}
 
-  {% include tag-nav.html %}
-
+  {%- comment -%} 태그 칩은 글이 늘수록 메뉴를 밀어내서 /tags/ 페이지로만 둔다 {%- endcomment -%}
+  {% if site.visitor_counter.enabled %}
   <div class="site-stats-panel">
     {% include visitor-counter.html %}
   </div>
+  {% endif %}
 
   {% capture nav_footer_custom %}
   {%- include nav_footer_custom.html -%}

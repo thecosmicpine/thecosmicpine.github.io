@@ -1,6 +1,6 @@
 // Just the Docs 레이아웃 유지 — Zabbix 블루는 CSS 오버라이드로 적용
 // (custom color_scheme CSS가 Pages에서 생성되지 않아 default 위에 직접 입힘)
-$body-font-family: "Segoe UI", Tahoma, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+$body-font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Malgun Gothic", "Noto Sans KR", sans-serif;
 $mono-font-family: Consolas, Menlo, "Courier New", monospace;
 
 body {
@@ -101,26 +101,6 @@ a {
   margin-bottom: 1.5em;
 }
 
-.post-nav {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 3em;
-  padding-top: 1em;
-  border-top: 1px solid #dfe4e7;
-}
-
-.post-nav a {
-  text-decoration: none;
-  color: #0275b8;
-  max-width: 45%;
-}
-
-.post-nav a:hover {
-  text-decoration: underline;
-}
-
-.post-nav-prev { text-align: left; }
-.post-nav-next { text-align: right; }
 
 .post-content h2 {
   border-bottom: 1px solid #dfe4e7;
@@ -242,4 +222,209 @@ a {
 .post-tag:hover {
   background: #d9eef9;
   text-decoration: none;
+}
+
+// ───────── 읽기 편한 글 본문 (2026-10 리팩토링) ─────────
+$ink: #1f2c33;
+$muted: #5f7480;
+$line: #dfe4e7;
+$accent: #0275b8;
+
+.main-content {
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+
+.post {
+  max-width: 44rem;
+}
+
+.post-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: $accent;
+}
+
+.post-title {
+  font-size: 1.85rem !important;
+  line-height: 1.35;
+  letter-spacing: -0.02em;
+  margin-top: 0;
+}
+
+.post-content {
+  font-size: 1.0625rem;
+  line-height: 1.85;
+  color: $ink;
+
+  p, li { margin-bottom: 0.9em; }
+
+  h2 {
+    margin-top: 2.6rem;
+    font-size: 1.4rem !important;
+    letter-spacing: -0.01em;
+  }
+
+  h3 { margin-top: 1.8rem; font-size: 1.15rem !important; }
+
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 0.5rem auto 1.5rem;
+  }
+
+  strong { color: #0a3c5b; }
+
+  // 표: 모바일에서 가로 스크롤
+  .table-wrapper { overflow-x: auto; border-radius: 8px; }
+  table { font-size: 0.95rem; }
+  td, th { line-height: 1.55; }
+
+  // 출처 접기
+  details {
+    margin: 2rem 0 1rem;
+    padding: 0.75rem 1rem;
+    background: #f5f8fa;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    color: $muted;
+  }
+  details summary { cursor: pointer; font-weight: 700; color: $ink; }
+  details li { margin-bottom: 0.35em; }
+
+  // 체크리스트: - [ ] 문법
+  .task-list { padding-left: 0.2rem; }
+  .task-list-item { list-style: none; }
+  .task-list-item-checkbox { margin-right: 0.5rem; transform: scale(1.15); }
+
+  // 숫자 카드: <div class="stat-row"><div class="stat"><b>24kPa</b><span>설명</span></div></div>
+  .stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+    gap: 0.75rem;
+    margin: 1.25rem 0 1.75rem;
+  }
+  .stat {
+    padding: 0.9rem 1rem;
+    background: #eef6fb;
+    border-radius: 10px;
+    line-height: 1.4;
+  }
+  .stat b { display: block; font-size: 1.5rem; color: $accent; letter-spacing: -0.02em; }
+  .stat span { font-size: 0.88rem; color: $muted; }
+
+  // 단계: 번호 목록에 .steps 를 붙이면 단계 카드처럼
+  ol.steps { counter-reset: step; padding-left: 0; }
+  ol.steps > li {
+    list-style: none;
+    position: relative;
+    padding: 0.2rem 0 0.2rem 2.6rem;
+    counter-increment: step;
+  }
+  ol.steps > li::before {
+    content: counter(step);
+    position: absolute; left: 0; top: 0.15rem;
+    width: 1.8rem; height: 1.8rem; line-height: 1.8rem;
+    text-align: center; border-radius: 50%;
+    background: $accent; color: #fff; font-weight: 700; font-size: 0.9rem;
+  }
+
+  // mermaid 도식은 어두운 코드 배경을 쓰지 않는다
+  .language-mermaid, .language-mermaid pre, pre.language-mermaid {
+    background: transparent !important;
+    border: 0 !important;
+    color: $ink;
+    text-align: center;
+  }
+}
+
+// 강조 상자(callout)는 본문보다 살짝 작게
+.post-content blockquote[class], .post-content p[class] { font-size: 0.98rem; }
+.post-content .summary { border-radius: 8px; }
+
+.post-meta { margin-bottom: 0.75em; }
+.post-tags { margin: 0 0 1.75em; }
+
+// ───────── 연재 상자 ─────────
+.series-box {
+  margin: 0 0 2rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid $line;
+  border-radius: 10px;
+  background: #fff;
+  font-size: 0.92rem;
+  max-width: 44rem;
+}
+.series-title { margin: 0 0 0.4rem; font-weight: 700; }
+.series-title span { color: $muted; font-weight: 400; }
+.series-box ol { margin: 0; padding-left: 1.3rem; }
+.series-box li { margin: 0.15rem 0; }
+.series-box .is-current { font-weight: 700; }
+
+// ───────── 카드 목록 (홈·카테고리·함께 읽기) ─────────
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin: 1rem 0 2rem;
+}
+.card-grid--compact { grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); }
+
+.post-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid $line;
+  border-radius: 12px;
+  overflow: hidden;
+  color: $ink !important;
+  text-decoration: none !important;
+  transition: box-shadow 0.15s, transform 0.15s;
+}
+.post-card:hover { box-shadow: 0 6px 18px rgba(10, 70, 106, 0.12); transform: translateY(-2px); }
+.post-card-img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: #dfe9ef; }
+.post-card-body { display: flex; flex-direction: column; gap: 0.3rem; padding: 0.85rem 1rem 1rem; }
+.post-card-cat { font-size: 0.75rem; font-weight: 700; color: $accent; }
+.post-card-title { font-size: 1rem; font-weight: 700; line-height: 1.45; word-break: keep-all; }
+.post-card--compact .post-card-title { font-size: 0.93rem; }
+.post-card-desc { font-size: 0.86rem; line-height: 1.55; color: $muted; }
+.post-card-date { font-size: 0.75rem; color: #8a9ca6; margin-top: auto; }
+.post-card--noimg { border-top: 4px solid $accent; }
+
+.related-posts { margin-top: 3rem; padding-top: 1.25rem; border-top: 1px solid $line; max-width: 44rem; }
+.related-title { font-size: 1.1rem !important; margin: 0 0 0.25rem; border: 0 !important; }
+
+// ───────── 홈 ─────────
+.home-hero {
+  padding: 1.75rem 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0a466a, #02304d);
+  color: #fff;
+}
+.home-hero h1 { color: #fff; margin: 0 0 0.5rem; font-size: 1.6rem !important; letter-spacing: -0.02em; }
+.home-hero p { margin: 0; color: #c9dbe6; }
+.home-section { display: flex; align-items: baseline; justify-content: space-between; border: 0 !important; }
+.home-section a { font-size: 0.85rem; font-weight: 400; }
+.series-list { list-style: none; padding-left: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.series-list li { margin: 0; padding: 0.4rem 0.8rem; border: 1px solid $line; border-radius: 999px; background: #fff; }
+
+// ───────── 글모음 ─────────
+.archive-month { font-size: 1.15rem !important; border: 0 !important; margin-top: 2rem; }
+.archive-list { list-style: none; padding-left: 0; }
+.archive-list li { padding: 0.35rem 0; border-bottom: 1px dashed $line; }
+.archive-date { display: inline-block; width: 3.2rem; color: #8a9ca6; font-variant-numeric: tabular-nums; }
+.archive-cat { color: $muted; }
+
+// ───────── 광고 자리 ─────────
+.ad-unit { margin: 2rem 0; min-height: 120px; max-width: 44rem; }
+.ad-label { display: block; font-size: 0.7rem; color: #9aa9b1; margin-bottom: 0.25rem; }
+
+@media (max-width: 50rem) {
+  .post-title { font-size: 1.5rem !important; }
+  .post-content { font-size: 1rem; }
+  .home-hero { padding: 1.25rem 1.1rem; }
 }

@@ -2,38 +2,59 @@
 layout: default
 ---
 
+{%- assign plain = content | strip_html | strip_newlines -%}
+{%- assign read_min = plain.size | divided_by: 500 | plus: 1 -%}
+{%- assign main_cat = page.categories | first -%}
+
 <article class="post">
   <header class="post-header">
+    {% if main_cat %}<p class="post-kicker">{{ main_cat }}</p>{% endif %}
     <h1 class="post-title">{{ page.title | escape }}</h1>
     <p class="post-meta">
-      <time datetime="{{ page.date | date_to_xmlschema }}">
-        {{ page.date | date: "%Y년 %m월 %d일" }}
-      </time>
-      {% if page.categories.size > 0 %}
-        • {{ page.categories | join: ", " }}
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%Y년 %-m월 %-d일" }}</time>
+      {% if page.last_modified_at %}
+        · 고친 날 <time datetime="{{ page.last_modified_at | date_to_xmlschema }}">{{ page.last_modified_at | date: "%Y년 %-m월 %-d일" }}</time>
       {% endif %}
+      · {{ read_min }}분 읽기
     </p>
     {% if page.tags and page.tags.size > 0 %}
     <p class="post-tags">
       {% for tag in page.tags %}
-        <a class="post-tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">{{ tag }}</a>
+        <a class="post-tag" href="{{ '/tags/' | relative_url }}#{{ tag | slugify }}">#{{ tag }}</a>
       {% endfor %}
     </p>
     {% endif %}
   </header>
 
+  {% if page.series %}{% include series-box.html %}{% endif %}
+
   <div class="post-content">
-    {{ content }}
+    {%- if site.adsense.slots.in_article != "" -%}
+      {%- assign parts = content | split: '<h2' -%}
+      {%- assign ad_at = parts.size | divided_by: 2 -%}
+      {%- if ad_at < 2 -%}{%- assign ad_at = 2 -%}{%- endif -%}
+      {%- for part in parts -%}
+        {%- if forloop.first -%}{{ part }}{%- else -%}
+          {%- if forloop.index0 == ad_at and parts.size > 3 -%}{% include ad-unit.html slot=site.adsense.slots.in_article kind="in_article" %}{%- endif -%}
+          <h2{{ part }}
+        {%- endif -%}
+      {%- endfor -%}
+    {%- else -%}
+      {{ content }}
+    {%- endif -%}
   </div>
+
+  {% if site.adsense.slots.after_post != "" %}{% include ad-unit.html slot=site.adsense.slots.after_post kind="after_post" %}{% endif %}
+
+  {% include related-posts.html %}
 
   {% include comments.html %}
 </article>
 
-<nav class="post-nav">
-  {% if page.previous.url %}
-    <a href="{{ page.previous.url | relative_url }}" class="post-nav-prev">← {{ page.previous.title }}</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a href="{{ page.next.url | relative_url }}" class="post-nav-next">{{ page.next.title }} →</a>
-  {% endif %}
-</nav>
+{% if page.mermaid %}
+<script type="module">
+  import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs';
+  mermaid.initialize({ startOnLoad: false, theme: 'neutral', fontFamily: 'Pretendard Variable, sans-serif' });
+  await mermaid.run({ querySelector: '.language-mermaid' });
+</script>
+{% endif %}
