@@ -3,6 +3,7 @@ layout: post
 title: "Text-to-SQL이 막힌 자리 — 분석 에이전트의 문맥 3층"
 date: 2026-09-16 23:15:00 +0900
 categories: ["Claude"]
+tags: ["분석에이전트", "ClaudeCode", "TextToSQL", "컨텍스트엔지니어링"]
 permalink: /posts/2026-09-16-claude-code-analysis-agent-context-harness/
 description: "Text-to-SQL만으로 막히던 데이터 분석을 Claude Code 에이전트로 풀면서 쌓은 문맥 3층 구조를 정리했다."
 ---
@@ -11,14 +12,12 @@ description: "Text-to-SQL만으로 막히던 데이터 분석을 Claude Code 에
 
 **초안 작성·문장 정리에 AI를 사용했다.** 해석은 정리자의 것이며 원문과 다를 수 있다.
 
-- 출처(원문): https://note.com/guchey/n/n9eb66dd5d470
-- 소개 트윗: https://x.com/koni/status/2100056588568645902
-- 작성자: 田口 信元 (@guchey) — Ubie PdM
-- 원제: Claude Codeで分析エージェントを作って3か月運用した話
-- 게시(원문): 2026-04-04
-- 관련 키워드: learning · agents · harness · skills · memory · mcp · llm
+{: .summary }
+> - 분석 에이전트는 **데이터·분석·문맥 세 층**으로 쌓고, Text-to-SQL을 넘어선 결정타는 **문맥 층의 팀 횡단 공유**였다.
+> - 가설은 **최소 3개 이상** 나열하고, 처음 맞아 떨어진 가설에서 멈추지 않고 하나씩 검증한다.
+> - cron으로 Slack·JIRA·Notion·GitHub를 모아 **`memory.md`**에 쌓고, 메트릭 변동과 **날짜가 맞으면 가설**로 삼는다.
 
-## 이 문서가 다루는 문제
+## SQL을 잘 쓰는 것만으로는 왜 “왜”에 답하지 못하나?
 
 제품 KPI·CVR이 흔들릴 때, 원인은 우리 팀 시책일 수도 있고 옆 팀 광고·계절·검색 알고리즘·UI 변경일 수도 있다. 작성자 기준 Ubie에는 **3,000개 이상**의 dbt 모델이 돌아가며, “어느 테이블을 볼지”만으로도 숙련이 필요하다. 이런 판단 지식은 문서화되어 있어도 실상은 **경험값으로 한 사람의 머릿속**에 남는 경우가 많다.[1]
 
@@ -33,7 +32,7 @@ description: "Text-to-SQL만으로 막히던 데이터 분석을 Claude Code 에
 | 실패 모드 | 준 데이터 범위 안에서 그럴듯한 설명 | 교차 소스·날짜 정렬로 가설을 넓힘 |
 | 배포 | 개인 프롬프트 | 플러그인·버전관리로 팀 공유 |
 
-## 핵심 개념
+## 분석 에이전트는 세 층으로 쌓는다
 
 ### 1. 분석 에이전트의 세 층
 
@@ -51,11 +50,12 @@ description: "Text-to-SQL만으로 막히던 데이터 분석을 Claude Code 에
 
 원문이 든 탐색 예시는 대략 다음 방향전환이다(작성자 사례의 서술).
 
-1. 주간 CV 추이 → 특정 주부터 변동 감지  
-2. 채널 분해 → Organic 쪽 변동이 주원인으로 보임  
-3. 카테고리 분해 → 특정 카테고리 경향 확인  
-4. Search Console 지표 → CTR 변동 포착  
-5. 지식에 따라 외부 환경 조사 → 감염증 유행 등과 연결해 리포트  
+1. 주간 CV 추이 → 특정 주부터 변동 감지
+2. 채널 분해 → Organic 쪽 변동이 주원인으로 보임
+3. 카테고리 분해 → 특정 카테고리 경향 확인
+4. Search Console 지표 → CTR 변동 포착
+5. 지식에 따라 외부 환경 조사 → 감염증 유행 등과 연결해 리포트
+{: .steps }
 
 ### 3. 하니스: 모델이 아니라 “무엇을 보여줄지”
 
@@ -63,20 +63,29 @@ description: "Text-to-SQL만으로 막히던 데이터 분석을 Claude Code 에
 
 OpenAI 측이 공개한 숫자(원문·OpenAI 글 공통으로 인용): 사내 사용자 **3,500명 이상**, 데이터 **600PB** 규모에서 자연어로 물어 수분 내 인사이트를 노린다는 서술이다. 독립 재현 수치가 아니라 공개문의 자체 주장이다.[1][2]
 
-## 작동 원리
+<div class="stat-row">
+  <div class="stat"><b>3,500명+</b><span>OpenAI 데이터 에이전트 사내 사용자(공개문 주장)</span></div>
+  <div class="stat"><b>600PB</b><span>같은 에이전트가 다루는 데이터 규모(공개문 주장)</span></div>
+  <div class="stat"><b>3,000개+</b><span>작성자 기준 Ubie에서 돌아가는 dbt 모델</span></div>
+</div>
+
+## 첫 가설에서 멈추지 않게 하는 네 단계
 
 질문 한 줄이 들어오면, 에이전트는 고정 대시보드 한 방을 치는 대신 **가설 주도 조사 규칙**을 따른다. 원문이 Agent에 공통으로 둔 규칙은 다음과 같다.[1]
 
-1. **사실 확인** — 먼저 숫자를 본다. 해석하지 않는다.  
-2. **가설 발산** — 최소 3개 이상 나열한다. 여기서 좁히지 않는다.  
-3. **체계적 검증** — 가설을 하나씩 검증한다. 처음 맞아 떨어진 가설에서 멈추지 않는다.  
-4. **반복** — 검증 중 새 사실이 나오면 가설을 다시 만들고 반복한다.  
+1. **사실 확인** — 먼저 숫자를 본다. 해석하지 않는다.
+2. **가설 발산** — 최소 3개 이상 나열한다. 여기서 좁히지 않는다.
+3. **체계적 검증** — 가설을 하나씩 검증한다. 처음 맞아 떨어진 가설에서 멈추지 않는다.
+4. **반복** — 검증 중 새 사실이 나오면 가설을 다시 만들고 반복한다.
+{: .steps }
 
 그럴듯한 첫 가설에서 탐색을 끝내지 않게 막는 장치다.
 
-분석 시점에는 BigQuery 쪽 **메트릭**과 로컬 `memory.md` 쪽 **사업 문맥**을 함께 쓴다. 예: 메트릭이 “어느 주부터 Organic CV 감소”를 보고하고, `memory.md`에 “같은 시기 SNS 유입 시책 종료”, “검색 결과 AI Overviews 표시율 증가”가 있으면 시계열로 정렬해 상관 사건을 고른다. 로그로 직접 이어지지 않아도 **날짜가 맞으면 가설이 된다**는 점이 핵심이라고 한다.[1]
+분석 시점에는 BigQuery 쪽 **메트릭**과 로컬 `memory.md` 쪽 **사업 문맥**을 함께 쓴다.
 
-## 구조와 흐름
+예: 메트릭이 “어느 주부터 Organic CV 감소”를 보고하고, `memory.md`에 “같은 시기 SNS 유입 시책 종료”, “검색 결과 AI Overviews 표시율 증가”가 있으면 시계열로 정렬해 상관 사건을 고른다. 로그로 직접 이어지지 않아도 **날짜가 맞으면 가설이 된다**는 점이 핵심이라고 한다.[1]
+
+## Claude Code에서는 세 층이 플러그인과 파일로 맞물린다
 
 ### Claude Code와 세 층의 맞물림
 
@@ -134,7 +143,7 @@ Specialized Skill의 References가 데이터·문맥 층의 실체다. 원문이
 | L5 Memory | 수정·학습의 보존 | `learned-corrections.md`, `memory.md`의 분석 수정 이력 |
 | L6 Runtime Context | 웨어하우스 실시간 질의 | `bq query`, MCP 실시간 검색 |
 
-## 적용 시나리오
+## 한 줄 질문은 어떤 흐름으로 리포트가 되나?
 
 다음은 원문이 서술한 탐색 흐름을, 독자가 필드별로 따라 볼 수 있게 정리한 **원문 기반 시나리오**다(가상 숫자를 새로 만들지 않는다).
 
@@ -144,9 +153,14 @@ Specialized Skill의 References가 데이터·문맥 층의 실체다. 원문이
 - **단계:** Entry 스킬이 Agent를 고른다 → Agent가 사실 확인·가설 3개 이상·체계적 검증 루프를 돈다 → Specialized Skill의 References·`memory.md`·BigQuery를 교차한다 → 필요 시 외부 환경 지식을 붙인다.  
 - **기대 결과:** 채널·카테고리·외부 요인 등이 묶인 진단 리포트와, 다음을 위한 `memory.md`/교정 파일 갱신.  
 - **실패 조건:** 문맥 층이 비어 데이터 범위만으로 설명하려 할 때; 첫 가설에서 조기 종료할 때; 비용 변동만으로 이상을 판정할 때(원문 교정 사례).  
-- **검증:** 가설이 3개 이상 검증됐는지, 메트릭 변동과 `memory.md` 사건이 날짜로 대응했는지, 교정 파일이 다음 실행에 읽히는지 확인한다.
+- **검증:** 아래 세 가지를 확인한다.
 
-## Hands-on
+{: .tip }
+> - [ ] 가설이 3개 이상 검증됐는지
+> - [ ] 메트릭 변동과 `memory.md` 사건이 날짜로 대응했는지
+> - [ ] 교정 파일이 다음 실행에 읽히는지
+
+## Hands-on: 같은 뼈대를 내 프로젝트에 옮기려면?
 
 원문 환경(Ubie 내부 BigQuery·조직 플러그인 마켓·실계정)은 그대로 복제할 수 없다. 아래는 **같은 뼈대**를 자기 프로젝트에 옮길 때의 점검·최소 골격이다. 유료 코스·사내 설정 덤프가 아니다.
 
@@ -247,7 +261,7 @@ rg -n "가설|hypothesis|3" agents/kpi-type-a.md || echo "rules missing"
   **원인:** 이상 감지를 비용 축만으로 수행(원문 교정 사례: CVR 51%→5%, 비용 −34%로 임계 미달).  
   **해결:** `learned-corrections.md`에 다중 축 규칙을 남기고 Specialized Skill이 항상 읽게 한다.[1]
 
-## 읽을 때 경계
+## 운용 수치는 작성자 경험이고, 리터러시는 대체되지 않는다
 
 - 3개월 운용·반나절→수분·오류 감소 등은 **작성자 운용 경험**이다. 일반 성공률·생산성 배수를 주장하지 않는다.  
 - OpenAI 6층·3.5k 사용자·600PB는 OpenAI 공개문의 서술이며, 원문 도표의 대응은 작성자 매핑이다.[1][2]  
@@ -255,13 +269,20 @@ rg -n "가설|hypothesis|3" agents/kpi-type-a.md || echo "rules missing"
 - 분석 에이전트는 분석 리터러시를 **대체하지 않는다**. 원문도 출력 해석·심화 판단에 도메인·분석 문해가 필요하다고 적는다.[1]  
 - Claude Code·MCP·플러그인 마켓 형식은 제품 시점에 따라 달라질 수 있다.
 
-## 남는 한 줄
+## Text-to-SQL은 출발점일 뿐이다
 
 Text-to-SQL은 출발점이고, **왜**에 답하려면 데이터 밖의 문맥을 쌓아 가설을 돌리며, 그 장치를 플러그인으로 팀 전체에 배포하는 쪽이 원문의 중심이다. 리터러시는 그 위에 남는다.
 
-## Sources
+<details markdown="1">
+<summary>출처 4곳</summary>
 
-[1] https://note.com/guchey/n/n9eb66dd5d470 — 田口 信元, Claude Code 분석 에이전트 3개월 운용기 (세 층, 플러그인, memory.md, OpenAI 대응 도표, 한계)  
-[2] https://openai.com/index/inside-our-in-house-data-agent/ — OpenAI in-house data agent, 6층 컨텍스트·하니스 서술  
-[3] https://zenn.dev/ubie_dev/articles/1fe0b284b6173c — 원문이 링크한 Ubie 데이터 분석 기반 소개  
-[4] https://x.com/koni/status/2100056588568645902 — 원문 소개 트윗 (@koni)
+- 작성자: 田口 信元 (@guchey) — Ubie PdM
+- 원제: Claude Codeで分析エージェントを作って3か月運用した話
+- 게시(원문): 2026-04-04
+- 관련 키워드: learning · agents · harness · skills · memory · mcp · llm
+- [1] [note.com/guchey/n/n9eb66dd5d470](https://note.com/guchey/n/n9eb66dd5d470) — 田口 信元, Claude Code 분석 에이전트 3개월 운용기 (세 층, 플러그인, memory.md, OpenAI 대응 도표, 한계)
+- [2] [openai.com/index/inside-our-in-house-data-agent](https://openai.com/index/inside-our-in-house-data-agent/) — OpenAI in-house data agent, 6층 컨텍스트·하니스 서술
+- [3] [zenn.dev/ubie_dev/articles/1fe0b284b6173c](https://zenn.dev/ubie_dev/articles/1fe0b284b6173c) — 원문이 링크한 Ubie 데이터 분석 기반 소개
+- [4] [x.com/koni/status/2100056588568645902](https://x.com/koni/status/2100056588568645902) — 원문 소개 트윗 (@koni)
+
+</details>

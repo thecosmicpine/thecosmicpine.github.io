@@ -3,6 +3,7 @@ layout: post
 title: "QR코드는 왜 일부가 가려져도 읽힐까 — 30%의 진짜 의미"
 date: 2026-10-04 23:02:00 +0900
 categories: ["AI와 기술"]
+tags: ["QR코드", "오류정정", "리드솔로몬", "인쇄디자인"]
 permalink: /posts/2026-10-04-qr-code-error-correction/
 description: "QR코드 가운데에 로고가 있거나 한쪽이 긁혔는데도 카메라가 읽는 경우가 있습니다. 검은 점 몇 개만 바뀌어도 다른 정보가 될 것 같은데 왜 가능할까요?"
 image: /assets/img/posts/2026-10-04-qr-code-error-correction.jpg
@@ -14,31 +15,41 @@ QR코드 가운데에 로고가 있거나 한쪽이 긁혔는데도 카메라가
 
 핵심은 QR코드가 처음부터 **일부 손상을 전제로 여분의 복구 정보를 함께 저장하도록 설계된 코드**라는 점입니다. 그 중심에 Reed–Solomon 오류정정이 있습니다.
 
+{: .summary }
+> - 오류정정은 **L 7%·M 15%·Q 25%·H 30%** 네 단계입니다. 기준은 이미지 넓이가 아니라 **codeword**입니다.
+> - H의 30%를 **로고 면적으로 계산하면 안 됩니다.** 세 모서리의 finder pattern과 사방 **4모듈** 여백이 먼저 살아 있어야 합니다.
+> - 배포 전에는 **최종 크기와 실제 재질로 출력**해 여러 스마트폰에서 실제 사용 거리로 테스트합니다.
+
 ## 작은 네모 안에 데이터와 읽기 지침이 들어 있다
 
 QR코드의 작은 흑백 정사각형 하나하나는 모듈(module)입니다. DENSO WAVE에 따르면 Version 1은 21×21 모듈, Version 40은 177×177 모듈이며 버전이 하나 올라갈 때마다 한 변에 4개 모듈이 추가됩니다.
+
+<div class="stat-row">
+  <div class="stat"><b>21×21</b><span>Version 1의 모듈 수</span></div>
+  <div class="stat"><b>177×177</b><span>Version 40의 모듈 수</span></div>
+  <div class="stat"><b>+4</b><span>버전이 하나 오를 때 한 변에 늘어나는 모듈</span></div>
+</div>
 
 이 격자 안에는 URL이나 문자뿐 아니라 위치 검출 패턴, 타이밍·형식 정보, 실제 데이터, 오류정정 정보가 함께 들어갑니다.
 
 세 모서리의 큰 네모는 finder pattern입니다. 스캐너는 이 패턴으로 QR코드의 위치와 방향을 먼저 찾습니다. 그래서 “일부가 가려져도 읽힌다”는 말이 “어디를 가려도 된다”는 뜻은 아닙니다. 데이터 일부 손상과 코드의 위치를 찾는 구조가 무너지는 것은 다른 문제입니다.
 
-## 남은 정보로 빠진 값을 복원하는 원리
+## QR은 같은 정보를 반복하지 않고 수학적 여분을 넣는다
 
 QR코드는 원본 데이터를 codeword 단위로 나누고, 그 데이터에서 계산한 Reed–Solomon 오류정정 codeword를 추가합니다. DENSO WAVE는 Reed–Solomon을 음악 CD 등에서도 사용되는 수학적 오류정정 방식으로 설명합니다.
 
 즉 URL을 그대로 두세 번 저장하는 것이 아닙니다. 원본과 수학적으로 연결된 여분 정보를 넣고, 일부를 읽지 못했을 때 남은 codeword들의 관계를 이용해 원래 값을 복원합니다.
 
-## L·M·Q·H와 ‘30%’의 함정
+## ‘30%’는 로고를 올려도 되는 면적이 아니다
 
 QR코드 오류정정은 네 단계입니다.
 
-L: 약 7%
-
-M: 약 15%
-
-Q: 약 25%
-
-H: 약 30%
+| 단계 | 복구 가능 비율 |
+|---|---|
+| L | 약 7% |
+| M | 약 15% |
+| Q | 약 25% |
+| H | 약 30% |
 
 여기서 기준은 이미지의 넓이가 아니라 데이터를 담은 단위입니다. **H의 30%를 로고를 올려도 되는 면적으로 계산하면 안 됩니다.**
 
@@ -92,7 +103,13 @@ ISO/IEC 18004:2024가 데이터 인코딩뿐 아니라 심볼 형식, 치수 특
 
 앞서 본 인쇄·촬영 조건도 여기에 겹칩니다. 같은 메뉴판도 조명이 반사되거나 너무 멀리서 찍으면 읽기 어려워질 수 있습니다. 로고가 있는 QR을 보며 ‘30%까지 괜찮겠지’라고 생각하기보다, 카메라가 코드의 위치와 작은 칸들을 먼저 알아볼 수 있는지를 떠올리면 이해하기 쉽습니다. 복구용 여분 정보는 그다음에 도움이 됩니다.
 
-## 결론
+{: .tip }
+> - [ ] 세 모서리의 finder pattern을 로고나 장식으로 가리지 않습니다
+> - [ ] 사방에 최소 **4모듈** 폭의 quiet zone을 남깁니다
+> - [ ] 긴 추적 URL 대신 짧은 URL로 **들어가는 데이터를 줄입니다**
+> - [ ] **최종 크기와 실제 재질**로 출력해 여러 스마트폰에서 실제 사용 거리로 찍어 봅니다
+
+## 좋은 QR코드는 여유를 두고 빠르게 읽힌다
 
 QR코드가 일부 가려져도 읽히는 이유는 같은 정보를 단순 반복해서 넣었기 때문이 아닙니다.
 
@@ -102,6 +119,14 @@ QR코드가 일부 가려져도 읽히는 이유는 같은 정보를 단순 반�
 
 결국 좋은 QR코드의 기준은 “30%까지 버틴다”가 아니라 **실제 사용 환경에서 충분한 여유를 두고 빠르게 읽히는가**입니다.
 
-## 출처
+<details markdown="1">
+<summary>출처 6곳</summary>
 
-DENSO WAVE Error Correction: [https://www.qrcode.com/en/about/error_correction.html](https://www.qrcode.com/en/about/error_correction.html)DENSO WAVE QR Code Overview: [https://www.qrcode.com/en/about/](https://www.qrcode.com/en/about/)DENSO WAVE Versions: [https://www.qrcode.com/en/about/version.html](https://www.qrcode.com/en/about/version.html)DENSO WAVE Quiet Zone: [https://www.qrcode.com/en/howto/code.html](https://www.qrcode.com/en/howto/code.html)ISO/IEC 18004:2024: [https://www.iso.org/standard/83389.html](https://www.iso.org/standard/83389.html)Thonky Reed–Solomon: [https://www.thonky.com/qr-code-tutorial/error-correction-coding](https://www.thonky.com/qr-code-tutorial/error-correction-coding)
+- DENSO WAVE Error Correction: [https://www.qrcode.com/en/about/error_correction.html](https://www.qrcode.com/en/about/error_correction.html)
+- DENSO WAVE QR Code Overview: [https://www.qrcode.com/en/about/](https://www.qrcode.com/en/about/)
+- DENSO WAVE Versions: [https://www.qrcode.com/en/about/version.html](https://www.qrcode.com/en/about/version.html)
+- DENSO WAVE Quiet Zone: [https://www.qrcode.com/en/howto/code.html](https://www.qrcode.com/en/howto/code.html)
+- ISO/IEC 18004:2024: [https://www.iso.org/standard/83389.html](https://www.iso.org/standard/83389.html)
+- Thonky Reed–Solomon: [https://www.thonky.com/qr-code-tutorial/error-correction-coding](https://www.thonky.com/qr-code-tutorial/error-correction-coding)
+
+</details>
