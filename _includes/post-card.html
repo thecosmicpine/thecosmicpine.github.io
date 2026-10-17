@@ -1,0 +1,12 @@
+{%- assign p = include.post -%}
+{%- assign thumb = p.image -%}
+{%- if thumb == "/assets/img/site-og.png" -%}{%- assign thumb = nil -%}{%- endif -%}
+<a class="post-card{% if include.compact %} post-card--compact{% endif %}{% unless thumb %} post-card--noimg{% endunless %}" href="{{ p.url | relative_url }}">
+  {%- if thumb -%}<img class="post-card-img" src="{{ thumb | relative_url }}" alt="" loading="lazy" width="400" height="225">{%- endif -%}
+  <span class="post-card-body">
+    <span class="post-card-cat">{{ p.categories | first }}</span>
+    <span class="post-card-title">{{ p.title | escape }}</span>
+    {%- unless include.compact -%}{%- if p.description -%}<span class="post-card-desc">{{ p.description | escape | truncate: 90 }}</span>{%- endif -%}{%- endunless -%}
+    <span class="post-card-date">{{ p.date | date: "%Y.%m.%d" }}</span>
+  </span>
+</a>

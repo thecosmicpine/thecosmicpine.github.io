@@ -1,16 +1,13 @@
 {% assign names = include.cats | split: "|" %}
 {% assign found = 0 %}
-<ul>
+<div class="card-grid">
 {% for post in site.posts %}
   {% assign hit = false %}
   {% for c in post.categories %}{% if names contains c %}{% assign hit = true %}{% endif %}{% endfor %}
   {% if hit %}
   {% assign found = found | plus: 1 %}
-  <li>
-    <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-    <small>{{ post.date | date: "%Y-%m-%d" }}{% if names.size > 1 %} · {{ post.categories | join: ", " }}{% endif %}</small>
-  </li>
+  {% include post-card.html post=post %}
   {% endif %}
 {% endfor %}
-</ul>
+</div>
 {% if found == 0 %}<p>아직 글이 없습니다.</p>{% endif %}

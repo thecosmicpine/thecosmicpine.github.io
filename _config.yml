@@ -1,7 +1,9 @@
 # Site settings
 title: TheCosmicPine
 description: >-
-  개인 블로그 - 기술, 개발, 그리고 생각을 기록합니다.
+  지금 모두가 얘기하는 AI·기기·생활 속 궁금증을 공식 자료로 확인해 쉽게 풀어 쓰는 블로그.
+lang: ko-KR
+locale: ko_KR
 baseurl: ""
 url: "https://thecosmicpine.github.io"
 permalink: /posts/:year-:month-:day-:title/
@@ -12,6 +14,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-remote-theme
+  - jekyll-sitemap
 
 # Just-the-docs theme settings
 search_enabled: true
@@ -19,9 +22,54 @@ heading_anchors: true
 
 # Zabbix 블루는 _sass/custom/custom.scss 오버라이드 (레이아웃 유지)
 # Custom CSS
-aux_links:
-  "GitHub":
-    - "https://github.com/thecosmicpine/thecosmicpine.github.io"
+# 상단 GitHub 링크는 독자에게 쓸모가 없어 뺐다
+aux_links: {}
+
+# 글 안의 강조 상자. 사용법은 README 「글 포맷」 참고
+callouts_level: quiet
+callouts:
+  summary:
+    title: 한눈에 보기
+    color: blue
+  tip:
+    title: 이렇게 하세요
+    color: green
+  warning:
+    title: 주의
+    color: red
+  note:
+    title: 덧붙임
+    color: purple
+  interpret:
+    title: 해석
+    color: grey-dk
+
+# 글 기본값
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      image: /assets/img/site-og.png
+  - scope:
+      path: "sources"
+    values:
+      sitemap: false
+
+# 검색 엔진 소유 확인 코드. 값을 넣으면 <head>에 meta가 들어간다
+site_verification:
+  google: ""
+  naver: ""
+  bing: ""
+
+# 애드센스. 자동 광고는 client만 있으면 켜진다.
+# 수동 광고 단위는 애드센스에서 만든 슬롯 번호를 넣을 때만 나온다(비어 있으면 출력 안 함)
+adsense:
+  client: "ca-pub-7287072613296683"
+  slots:
+    in_article: ""
+    after_post: ""
 
 # Navigation structure (Korean labels handled in page front matter)
 # Pages use nav_order and parent properties for sidebar hierarchy
@@ -33,6 +81,7 @@ exclude:
   - README.md
   - vendor/
   - preview/
+  - scripts/
 
 # Encoding
 encoding: utf-8
@@ -41,7 +90,7 @@ encoding: utf-8
 
 # 경량 방문 카운터 (사이드바 메뉴 하단)
 visitor_counter:
-  enabled: true
+  enabled: false
   script_url: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
 
 # 댓글 (Utterances — GitHub Issues)

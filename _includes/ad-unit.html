@@ -1,0 +1,10 @@
+{%- comment -%} 수동 광고 단위. include.slot 이 비어 있으면 호출하지 않는다 {%- endcomment -%}
+<aside class="ad-unit ad-unit--{{ include.kind }}" aria-label="광고">
+  <span class="ad-label">광고</span>
+  <ins class="adsbygoogle"
+       style="display:block{% if include.kind == 'in_article' %}; text-align:center{% endif %}"
+       data-ad-client="{{ site.adsense.client }}"
+       data-ad-slot="{{ include.slot }}"
+       {% if include.kind == "in_article" %}data-ad-layout="in-article" data-ad-format="fluid"{% else %}data-ad-format="auto" data-full-width-responsive="true"{% endif %}></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</aside>

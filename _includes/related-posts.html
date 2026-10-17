@@ -1,0 +1,24 @@
+{%- comment -%} 같은 연재 → 같은 카테고리 → 겹치는 태그 순으로 최대 3편 {%- endcomment -%}
+{%- assign main_cat = page.categories | first -%}
+{%- assign picked = "" -%}
+{%- assign count = 0 -%}
+{%- capture items -%}
+{%- for p in site.posts -%}
+  {%- if count >= 3 -%}{%- break -%}{%- endif -%}
+  {%- if p.url == page.url -%}{%- continue -%}{%- endif -%}
+  {%- if page.series and p.series == page.series -%}{%- continue -%}{%- endif -%}
+  {%- assign hit = false -%}
+  {%- if p.categories contains main_cat -%}{%- assign hit = true -%}{%- endif -%}
+  {%- for t in page.tags -%}{%- if p.tags contains t -%}{%- assign hit = true -%}{%- endif -%}{%- endfor -%}
+  {%- if hit -%}
+    {%- assign count = count | plus: 1 -%}
+    {% include post-card.html post=p compact=true %}
+  {%- endif -%}
+{%- endfor -%}
+{%- endcapture -%}
+{%- if count > 0 -%}
+<section class="related-posts" aria-label="함께 읽기">
+  <h2 class="related-title">함께 읽으면 좋은 글</h2>
+  <div class="card-grid card-grid--compact">{{ items }}</div>
+</section>
+{%- endif -%}
