@@ -5,7 +5,10 @@ date: 2026-09-30 18:05:00 +0900
 categories: ["과학의 뒷이야기"]
 permalink: /posts/2026-09-30-battery-dead-frog/
 description: "스마트폰 배터리의 시작은 죽은 개구리 실험이었다. 갈바니와 볼타의 논쟁이 어떻게 최초의 전지로 이어졌는지 따라간다."
+image: /assets/img/posts/2026-09-30-battery-dead-frog.jpg
 ---
+
+![배터리는 죽은 개구리에서 시작됐다 — 그리고 한 번의 과학적 논쟁에서](/assets/img/posts/2026-09-30-battery-dead-frog.jpg)
 
 스마트폰 배터리가 1% 남았다고 해보자.
 

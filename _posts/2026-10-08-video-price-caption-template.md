@@ -5,7 +5,10 @@ date: 2026-10-08 19:13:00 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-10-08-video-price-caption-template/
 description: "제품 소개 영상의 가격과 자막이 바뀔 때마다 화면 구성까지 새로 짤 필요는 없다. 바뀔 글자와 숫자를 따로 조절하도록 만들어 두면 기존 구성을 재사용할 수 있다. 수정한 내용을 MP4에 반영하려면 영상 파일을 다시 출력하는 과정은 필요하다."
+image: /assets/img/posts/2026-10-08-video-price-caption-template.jpg
 ---
+
+![가격과 자막만 바꾸는 영상, 매번 다시 만들 필요 있을까](/assets/img/posts/2026-10-08-video-price-caption-template.jpg)
 
 제품 소개 영상의 가격과 자막이 바뀔 때마다 화면 구성까지 새로 짤 필요는 없다. 바뀔 글자와 숫자를 따로 조절하도록 만들어 두면 기존 구성을 재사용할 수 있다. 수정한 내용을 MP4에 반영하려면 영상 파일을 다시 출력하는 과정은 필요하다.
 

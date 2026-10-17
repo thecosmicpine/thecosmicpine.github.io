@@ -6,7 +6,10 @@ categories: ["AI와 기술"]
 tags: ["github", "learning", "llm", "agents"]
 permalink: /posts/2026-09-07-ai-engineer-repos-summary/
 description: "AI·LLM·에이전트를 공부할 때 참고할 만한 GitHub 저장소 10곳을 무엇을 배울 수 있는지 기준으로 요약했다."
+image: /assets/img/posts/2026-09-07-ai-engineer-repos-summary.jpg
 ---
+
+![AI 엔지니어용 GitHub 레포 10선 (요약본)](/assets/img/posts/2026-09-07-ai-engineer-repos-summary.jpg)
 
 Shraddha Bharuka(`@BharukaShraddha`)가 [AI·ML·LLM·에이전트 학습용 GitHub 레포 10개](https://x.com/BharukaShraddha/status/2096296838811074949)를 묶어 둔 글을, **정보용 라이브러리**로 옮겨 둔 요약이다. 튜토리얼을 대신하지 않는다. 어디에 무엇이 있는지 한눈에 보기 위한 선반이다.
 

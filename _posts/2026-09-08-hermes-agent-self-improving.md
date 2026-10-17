@@ -6,7 +6,10 @@ categories: ["AI와 기술"]
 tags: ["hermes", "agents", "memory", "skills"]
 permalink: /posts/2026-09-08-hermes-agent-self-improving/
 description: "헤르메스 에이전트가 쓸수록 나아지는 구조, 곧 기억과 스킬을 쌓는 방식이 왜 핵심인지 개념 위주로 정리했다."
+image: /assets/img/posts/2026-09-08-hermes-agent-self-improving.jpg
 ---
+
+![헤르메스 에이전트 — 자가 발전이 핵심인 이유](/assets/img/posts/2026-09-08-hermes-agent-self-improving.jpg)
 
 레인 | AI 바이브코딩 채널의 [헤르메스 에이전트 소개 영상](https://www.youtube.com/watch?v=dJ41SuxMCS4)을 보고, **개념만** 골라 적어 둔 학습 메모다. 설치·클릭·토큰 절차는 다루지 않는다.  
 **초안 작성·문장 정리에 AI를 사용했다.** 해석은 작성자 것이며 영상과 다를 수 있다. 아래 **외부 연구 사례**의 수치·주장은 각 논문·프로젝트에 따른다.

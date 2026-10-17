@@ -5,7 +5,10 @@ date: 2026-10-10 11:33:00 +0900
 categories: ["과학의 뒷이야기"]
 permalink: /posts/2026-10-10-hangul-letter-shapes/
 description: "한글은 소리를 내는 자리와 방식의 관계를 글자 모양에도 담아 만들었다. 기본 모양에 획을 더한 원리와 그 예외를 따라가면, 익숙한 글자에서 어디까지 발음의 단서를 읽을 수 있는지 알게 된다."
+image: /assets/img/posts/2026-10-10-hangul-letter-shapes.jpg
 ---
+
+![ㄱ과 ㅋ이 닮은 이유, 한글 글자 모양에 담긴 원리](/assets/img/posts/2026-10-10-hangul-letter-shapes.jpg)
 
 ㄱ과 ㅋ, ㄴ·ㄷ·ㅌ은 자음표에서 떨어져 있어도 왜 모양이 닮았을까?
 

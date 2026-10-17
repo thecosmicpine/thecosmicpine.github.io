@@ -7,7 +7,10 @@ permalink: /posts/2026-10-03-grok-bot-01-how-it-finishes/
 description: "Grok Bot이 일을 끝까지 해내는 구조를 Bot·클라우드 컴퓨터·도구의 연결로 풀어 본다. Grok Bot 사용기 1편."
 series: "Grok Bot 사용기"
 series_order: 1
+image: /assets/img/posts/2026-10-03-grok-bot-01-how-it-finishes.jpg
 ---
+
+![Grok Bot - 01 Grok Bot은 어떻게 일을 끝낼까? Bot·컴퓨터·도구의 연결부터 이해하기](/assets/img/posts/2026-10-03-grok-bot-01-how-it-finishes.jpg)
 
 AI에게 “이 자료로 글 하나 써줘”라고 부탁하는 건 이제 익숙한 일이죠. 그런데 “자료를 찾아 사실을 확인하고, 정해진 곳에 저장한 다음, 내가 볼 수 있게 알려줘”라고 맡기면 궁금한 점이 늘어납니다. 어디서 작업할까요? 어떤 계정으로 자료를 읽고, 중간에 막히면 누가 이어받을까요?
 

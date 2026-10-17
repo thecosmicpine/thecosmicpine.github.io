@@ -5,7 +5,10 @@ date: 2026-10-05 15:33:00 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-10-05-passkey-lost-phone/
 description: "패스키는 지문 자체가 아니라 저장된 암호 키로 로그인합니다. 휴대폰을 잃은 뒤의 접근 가능 여부는 그 키를 다른 곳에서도 쓸 수 있는지에 달려 있습니다."
+image: /assets/img/posts/2026-10-05-passkey-lost-phone.jpg
 ---
+
+![패스키를 쓰는 휴대폰을 잃으면 어떻게 로그인할까](/assets/img/posts/2026-10-05-passkey-lost-phone.jpg)
 
 패스키는 지문 자체가 아니라 저장된 암호 키로 로그인합니다. 휴대폰을 잃은 뒤의 접근 가능 여부는 그 키를 다른 곳에서도 쓸 수 있는지에 달려 있습니다.
 
