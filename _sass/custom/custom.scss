@@ -296,7 +296,7 @@ $accent: #0275b8;
   details li { margin-bottom: 0.35em; }
 
   // 체크리스트: - [ ] 문법
-  .task-list { padding-left: 0.2rem; }
+  .task-list { padding-left: 0.6rem; }
   .task-list-item { list-style: none; }
   .task-list-item-checkbox { margin-right: 0.5rem; transform: scale(1.15); }
 
@@ -333,12 +333,18 @@ $accent: #0275b8;
   }
 
   // mermaid 도식은 어두운 코드 배경을 쓰지 않는다
-  .language-mermaid, .language-mermaid pre, pre.language-mermaid {
-    background: transparent !important;
+  pre:has(> code.language-mermaid),
+  .language-mermaid,
+  .language-mermaid .highlight,
+  .language-mermaid pre,
+  .language-mermaid code {
+    background: #fff !important;
     border: 0 !important;
     color: $ink;
     text-align: center;
+    white-space: normal;
   }
+  pre:has(> code.language-mermaid) { border-radius: 10px; padding: 0.5rem 0; margin: 1.25rem 0 1.75rem; }
 }
 
 // 강조 상자(callout)는 본문보다 살짝 작게
@@ -405,7 +411,7 @@ $accent: #0275b8;
   background: linear-gradient(135deg, #0a466a, #02304d);
   color: #fff;
 }
-.home-hero h1 { color: #fff; margin: 0 0 0.5rem; font-size: 1.6rem !important; letter-spacing: -0.02em; }
+.home-hero h1 { color: #fff; font-weight: 700; margin: 0 0 0.5rem; font-size: 1.6rem !important; letter-spacing: -0.02em; }
 .home-hero p { margin: 0; color: #c9dbe6; }
 .home-section { display: flex; align-items: baseline; justify-content: space-between; border: 0 !important; }
 .home-section a { font-size: 0.85rem; font-weight: 400; }
