@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 정치와 안보
-parent: 판단
-nav_order: 2
 permalink: /judgment/politics-security/
+nav_exclude: true
 ---
 
 # 정치와 안보

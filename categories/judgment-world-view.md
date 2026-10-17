@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 세계를 보는 시선
-parent: 판단
-nav_order: 3
 permalink: /judgment/world-view/
+nav_exclude: true
 ---
 
 # 세계를 보는 시선

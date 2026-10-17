@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 과학의 뒷이야기
-parent: 발견
-nav_order: 1
 permalink: /discover/science/
+nav_order: 4
 ---
 
 # 과학의 뒷이야기

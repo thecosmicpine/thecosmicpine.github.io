@@ -1,9 +1,8 @@
 ---
 layout: default
 title: AI와 기술
-parent: 발견
-nav_order: 2
 permalink: /discover/ai-tech/
+nav_order: 3
 ---
 
 # AI와 기술

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: 글모음
-nav_order: 3
+nav_order: 2
 permalink: /archive/
 ---
 

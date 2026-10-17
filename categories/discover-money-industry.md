@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 돈과 산업
-parent: 발견
-nav_order: 3
 permalink: /discover/money-industry/
+nav_order: 7
 ---
 
 # 돈과 산업

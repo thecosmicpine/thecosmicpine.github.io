@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 기술
-nav_order: 6
-has_children: true
 permalink: /tech/
+nav_exclude: true
 ---
 
 # 기술

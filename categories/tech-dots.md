@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Dots
-parent: 기술
-nav_order: 2
 permalink: /tech/dots/
+nav_order: 6
 ---
 
 # Dots

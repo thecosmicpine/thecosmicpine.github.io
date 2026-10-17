@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 짧은 생각
-parent: 기록
-nav_order: 2
 permalink: /record/short-thoughts/
+nav_exclude: true
 ---
 
 # 짧은 생각
