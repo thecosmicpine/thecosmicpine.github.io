@@ -3,6 +3,7 @@ layout: default
 title: 생활 매뉴얼
 permalink: /discover/life-manual/
 nav_order: 10
+count_cats: "생활 매뉴얼"
 ---
 
 # 생활 매뉴얼
