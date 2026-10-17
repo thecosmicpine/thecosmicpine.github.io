@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 직접 해본 것
-parent: 기록
-nav_order: 3
 permalink: /record/tried-myself/
+nav_exclude: true
 ---
 
 # 직접 해본 것

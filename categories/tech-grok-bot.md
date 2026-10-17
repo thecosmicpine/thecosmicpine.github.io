@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Grok Bot
-parent: 기술
-nav_order: 1
 permalink: /tech/grok-bot/
+nav_order: 5
 ---
 
 # Grok Bot

@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 사회의 모순
-parent: 판단
-nav_order: 1
 permalink: /judgment/society/
+nav_exclude: true
 ---
 
 # 사회의 모순

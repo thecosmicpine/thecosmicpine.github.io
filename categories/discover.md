@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 발견
-nav_order: 3
-has_children: true
 permalink: /discover/
+nav_exclude: true
 ---
 
 # 발견

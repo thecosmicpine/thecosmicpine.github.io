@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 판단
-nav_order: 4
-has_children: true
 permalink: /judgment/
+nav_exclude: true
 ---
 
 # 판단

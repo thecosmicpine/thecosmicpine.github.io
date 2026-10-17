@@ -1,9 +1,8 @@
 ---
 layout: default
 title: Muse
-parent: 기술
-nav_order: 3
 permalink: /tech/muse/
+nav_order: 9
 ---
 
 # Muse

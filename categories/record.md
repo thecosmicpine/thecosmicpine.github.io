@@ -1,9 +1,8 @@
 ---
 layout: default
 title: 기록
-nav_order: 5
-has_children: true
 permalink: /record/
+nav_exclude: true
 ---
 
 # 기록
