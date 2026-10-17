@@ -4,6 +4,7 @@ title: "GPT-6 Astra와 Obsidian vault: 추론 깊이와 검색을 함께 설계�
 date: 2026-09-12 17:51:20 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-09-12-cyrilxbt-gpt6-astra-obsidian/
+description: "GPT-6 Astra를 Obsidian 노트 보관함과 연결할 때 추론 깊이와 검색을 어떻게 나눠 설계하는지 정리했다."
 ---
 
 CyrilXBT(@cyrilXBT)의 X 아티클 [How to Connect GPT-6 Astra to Your Obsidian Vault and Get Reasoning Depth No Other Model Gives You](https://x.com/i/article/2098140027746242570)을 학습과 적용에 맞게 다시 구성한 기술 문서다. 원문의 주장·사례·한계를 보존하되, 큰 Obsidian vault에서 추론 깊이와 검색을 어떻게 함께 운영할지에 초점을 맞췄다.

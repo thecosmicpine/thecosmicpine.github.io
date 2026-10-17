@@ -5,6 +5,8 @@ date: 2026-10-16 19:50:00 +0900
 categories: ["AI와 기술"]
 tags: ["Muse", "Dots", "Grok Bot", "AI에이전트"]
 permalink: /posts/2026-10-16-muse-dots-grok-bot-compared/
+description: "올가을 거대 AI 회사 세 곳이 거의 같은 시기에 '일하는 AI'를 내놓았다. xAI의 Grok Bot(8월 11일), Meta의 Muse(9월 8일), OpenAI의 Dots(9월 29일)다."
+image: /assets/img/posts/2026-10-16-muse-dots-grok-bot.png
 ---
 
 ![세 개의 빛나는 구슬](/assets/img/posts/2026-10-16-muse-dots-grok-bot.png)

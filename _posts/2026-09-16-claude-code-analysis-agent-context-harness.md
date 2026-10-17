@@ -4,6 +4,7 @@ title: "Text-to-SQL이 막힌 자리 — 분석 에이전트의 문맥 3층"
 date: 2026-09-16 23:15:00 +0900
 categories: ["Claude"]
 permalink: /posts/2026-09-16-claude-code-analysis-agent-context-harness/
+description: "Text-to-SQL만으로 막히던 데이터 분석을 Claude Code 에이전트로 풀면서 쌓은 문맥 3층 구조를 정리했다."
 ---
 
 [田口 信元(@guchey)](https://note.com/guchey/n/n9eb66dd5d470)의 note [Claude Codeで分析エージェントを作って3か月運用した話](https://note.com/guchey/n/n9eb66dd5d470)를 학습·재현에 맞게 다시 구성한 기술 문서다. 출발점은 “SQL을 잘 쓰게 하는 것”이 아니라, **왜**를 묻게 할 문맥을 쌓는 쪽이다.

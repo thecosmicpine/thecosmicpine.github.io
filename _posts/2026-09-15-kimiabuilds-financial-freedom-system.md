@@ -4,6 +4,7 @@ title: "글로 배우는 부 — 소득이 자산을 만들 만큼 남아야 한
 date: 2026-09-15 15:17:00 +0900
 categories: ["돈과 산업"]
 permalink: /posts/2026-09-15-kimiabuilds-financial-freedom-system/
+description: "운에 기대지 않고 부를 쌓으려면 소득이 자산을 만들 만큼 남아야 한다는 주장을 원리 중심으로 정리했다."
 ---
 
 **한 줄:** 자산이 소득을 만들기 전에, 소득이 자산을 만들 만큼 남아야 한다.

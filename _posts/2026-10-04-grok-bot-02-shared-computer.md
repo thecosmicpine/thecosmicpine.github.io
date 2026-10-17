@@ -4,6 +4,9 @@ title: "[Grok Bot - 02] Grok Bot들은 같은 컴퓨터를 쓴다: 파일·로�
 date: 2026-10-04 18:53:00 +0900
 categories: ["Grok Bot"]
 permalink: /posts/2026-10-04-grok-bot-02-shared-computer/
+description: "Grok Bot 여러 개는 하나의 클라우드 컴퓨터를 함께 쓴다. 파일과 로그인이 Bot 사이에 어떻게 공유되는지, 무엇을 조심해야 하는지 정리했다. Grok Bot 사용기 2편."
+series: "Grok Bot 사용기"
+series_order: 2
 ---
 
 Grok Bot 연재 2편이에요. 앞선 1편 [Grok Bot은 어떻게 일을 끝낼까? Bot·컴퓨터·도구의 연결부터 이해하기](https://blog.naver.com/theoutput/224430562605)에서는 Bot·컴퓨터·도구의 연결을 살펴봤어요.

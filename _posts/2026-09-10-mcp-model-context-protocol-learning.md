@@ -5,6 +5,7 @@ date: 2026-09-09 23:50:00 +0900
 categories: ["AI와 기술"]
 tags: ["mcp", "agents", "protocol", "tools"]
 permalink: /posts/2026-09-10-mcp-model-context-protocol-learning/
+description: "MCP(Model Context Protocol)가 AI와 도구를 잇는 표준으로 어떻게 동작하는지, 개념이 쌓이는 순서대로 설명한다."
 ---
 
 [@vicky_grok](https://x.com/vicky_grok)의 X 아티클 [Build Better AI Applications Using MCP](https://x.com/vicky_grok/status/2096948576731717922)을 개념이 쌓이는 순서로 다시 짠 메모다. 설치·코드 붙여넣기는 다루지 않는다.  

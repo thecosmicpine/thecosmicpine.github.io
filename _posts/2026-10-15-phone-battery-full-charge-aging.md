@@ -5,6 +5,8 @@ date: 2026-10-15 19:52:00 +0900
 categories: ["과학의 뒷이야기"]
 tags: ["배터리수명", "리튬이온배터리", "충전습관", "생활과학"]
 permalink: /posts/2026-10-15-phone-battery-full-charge-aging/
+description: "밤새 충전기에 꽂아 둔 휴대폰이 아침에 100%를 찍고 있으면 왠지 든든하다. 그런데 요즘 아이폰과 갤럭시에는 일부러 80%에서 충전을 늦추거나 멈추는 기능이 들어 있다."
+image: /assets/img/posts/2026-10-15-battery-full-charge.png
 ---
 
 ![밤 협탁 위 충전 중인 휴대폰](/assets/img/posts/2026-10-15-battery-full-charge.png)
