@@ -2,7 +2,7 @@
 layout: post
 title: "글로 배우는 부 — 소득이 자산을 만들 만큼 남아야 한다"
 date: 2026-09-15 15:17:00 +0900
-categories: ["Wealth"]
+categories: ["돈과 산업"]
 permalink: /posts/2026-09-15-kimiabuilds-financial-freedom-system/
 ---
 

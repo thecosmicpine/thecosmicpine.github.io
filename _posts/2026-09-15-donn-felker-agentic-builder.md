@@ -2,7 +2,7 @@
 layout: post
 title: "실행이 싸질 때 — Agentic Builder"
 date: 2026-09-15 15:10:00 +0900
-categories: ["Notes"]
+categories: ["AI와 기술"]
 permalink: /posts/2026-09-15-donn-felker-agentic-builder/
 ---
 

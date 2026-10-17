@@ -2,7 +2,7 @@
 layout: post
 title: "AI 엔지니어용 GitHub 레포 10선 (요약본)"
 date: 2026-09-07 23:30:00 +0900
-categories: ["Notes"]
+categories: ["AI와 기술"]
 tags: ["github", "learning", "llm", "agents"]
 permalink: /posts/2026-09-07-ai-engineer-repos-summary/
 ---

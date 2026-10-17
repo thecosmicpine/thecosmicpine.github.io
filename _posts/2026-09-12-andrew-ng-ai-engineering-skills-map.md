@@ -2,7 +2,7 @@
 layout: post
 title: "Andrew Ng의 AI Engineering 스킬 맵: 빌드를 주도하는 법"
 date: 2026-09-12 15:51:21 +0900
-categories: ["Notes"]
+categories: ["AI와 기술"]
 permalink: /posts/2026-09-12-andrew-ng-ai-engineering-skills-map/
 ---
 

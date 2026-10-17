@@ -2,7 +2,7 @@
 layout: post
 title: "Learn Harness Engineering 무료 코스 (요약본)"
 date: 2026-09-08 00:00:00 +0900
-categories: ["Notes"]
+categories: ["AI와 기술"]
 tags: ["harness", "agents", "github", "learning"]
 permalink: /posts/2026-09-08-learn-harness-engineering-summary/
 ---

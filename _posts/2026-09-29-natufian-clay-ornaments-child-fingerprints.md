@@ -2,7 +2,7 @@
 layout: post
 title: "농사를 짓기도 전에, 누군가는 아이에게 목걸이 만드는 법을 가르쳤다"
 date: 2026-09-29 12:30:00 +0900
-categories: ["Notes"]
+categories: ["과학의 뒷이야기"]
 permalink: /posts/2026-09-29-natufian-clay-ornaments-child-fingerprints/
 ---
 
