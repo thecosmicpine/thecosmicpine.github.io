@@ -6,7 +6,10 @@ categories: ["AI와 기술"]
 tags: ["harness", "agents", "github", "learning"]
 permalink: /posts/2026-09-08-learn-harness-engineering-summary/
 description: "무료 코스 Learn Harness Engineering의 내용을 요약했다. AI 에이전트를 감싸는 하네스를 어떻게 설계하는지 단계별로 본다."
+image: /assets/img/posts/2026-09-08-learn-harness-engineering-summary.jpg
 ---
+
+![Learn Harness Engineering 무료 코스 (요약본)](/assets/img/posts/2026-09-08-learn-harness-engineering-summary.jpg)
 
 santi(`@santtiagom_`)가 [로드맵을 실습으로 옮기려면 이 레포를 보라](https://x.com/santtiagom_/status/2092751908922446181)고 추천한 **Harness Engineering** 무료 코스를 Notes용 라이브러리로 요약해 둔다. 따라 하기 절차서가 아니라, **무엇이 있는지·어디를 보면 되는지** 한눈에 두는 메모다.  
 **초안 작성·문장 정리에 AI를 사용했다.** 해석은 작성자 것이며, 코스 구성은 수집 시점 기준이다.

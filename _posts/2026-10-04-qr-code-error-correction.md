@@ -5,7 +5,10 @@ date: 2026-10-04 23:02:00 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-10-04-qr-code-error-correction/
 description: "QR코드 가운데에 로고가 있거나 한쪽이 긁혔는데도 카메라가 읽는 경우가 있습니다. 검은 점 몇 개만 바뀌어도 다른 정보가 될 것 같은데 왜 가능할까요?"
+image: /assets/img/posts/2026-10-04-qr-code-error-correction.jpg
 ---
+
+![QR코드는 왜 일부가 가려져도 읽힐까 — 30%의 진짜 의미](/assets/img/posts/2026-10-04-qr-code-error-correction.jpg)
 
 QR코드 가운데에 로고가 있거나 한쪽이 긁혔는데도 카메라가 읽는 경우가 있습니다. 검은 점 몇 개만 바뀌어도 다른 정보가 될 것 같은데 왜 가능할까요?
 

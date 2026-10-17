@@ -7,7 +7,10 @@ permalink: /posts/2026-10-05-grok-bot-03-multi-bot-ownership/
 description: "여러 Grok Bot에게 일을 나눠 맡길 때 누가 결과를 끝까지 챙기게 할지, 담당과 인계를 정하는 법을 정리했다. Grok Bot 사용기 3편."
 series: "Grok Bot 사용기"
 series_order: 3
+image: /assets/img/posts/2026-10-05-grok-bot-03-multi-bot-ownership.jpg
 ---
+
+![Grok Bot - 03 여러 Bot에게 일을 맡기면, 누가 끝까지 챙길까?](/assets/img/posts/2026-10-05-grok-bot-03-multi-bot-ownership.jpg)
 
 여러 Bot에게 일을 나누면, 결과를 복사하고 다음 담당자를 불러 주는 수고도 줄어들까요?
 

@@ -6,7 +6,10 @@ categories: ["Grok Bot"]
 tags: ["grok-bot", "whop", "operator"]
 permalink: /posts/2026-09-05-grok-bot-whop-operator/
 description: "Grok Bot과 Whop을 묶어 24시간 돌아가는 비즈니스 운영자로 쓰는 사례를 정리했다. 무엇을 맡기고 어디서 사람이 확인해야 하는지 짚는다."
+image: /assets/img/posts/2026-09-05-grok-bot-whop-operator.jpg
 ---
+
+![Grok Bot × Whop — 24/7 비즈니스 오퍼레이터](/assets/img/posts/2026-09-05-grok-bot-whop-operator.jpg)
 
 codila(`@0xCodila`)의 [Grok Bot × Whop 아티클](https://x.com/i/article/2091575612960096256)을 **24/7 비즈니스 오퍼레이터**라는 사용 사례로 읽어 정리한 메모다. 따라 할 절차서가 아니라, 원문이 푸는 문제와 그 아키텍처를 내 말로 다시 짠 해석이다.  
 **초안 작성·문장 정리에 AI를 사용했다.** 해석은 작성자 것이며 원문과 다를 수 있다. 아래 숫자·인용·프롬프트는 원문에 나온 것만 옮긴다.

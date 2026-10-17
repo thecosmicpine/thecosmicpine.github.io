@@ -7,7 +7,10 @@ permalink: /posts/2026-10-11-dots-03-repeat-tasks/
 description: "Dots는 대화의 맥락과 선호를 이어서 활용하는 개인 AI 비서다. 그 안의 비서 하나를 dot이라 부른다. 다시 설명하는 수고를 줄이려면 계속 적용할 기준을 알려 주고, 반복할 일의 시간과 결과를 받을 조건을 구체적으로 정해야 한다."
 series: "Dots 사용기"
 series_order: 3
+image: /assets/img/posts/2026-10-11-dots-03-repeat-tasks.jpg
 ---
+
+![Dots - 03 같은 일을 다시 설명하지 않고 맡기려면?](/assets/img/posts/2026-10-11-dots-03-repeat-tasks.jpg)
 
 Dots는 대화의 맥락과 선호를 이어서 활용하는 개인 AI 비서다. 그 안의 비서 하나를 dot이라 부른다. 다시 설명하는 수고를 줄이려면 계속 적용할 기준을 알려 주고, 반복할 일의 시간과 결과를 받을 조건을 구체적으로 정해야 한다. 기억할 내용과 실제로 실행할 약속을 함께 맞추는 과정이다.
 

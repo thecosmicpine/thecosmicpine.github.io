@@ -5,7 +5,10 @@ date: 2026-10-09 21:12:00 +0900
 categories: ["과학의 뒷이야기"]
 permalink: /posts/2026-10-09-stars-twinkle-planets-dont/
 description: "저녁 산책 중 하늘을 보면 유난히 깜빡이는 빛이 있고, 비교적 차분하게 빛나는 점도 있다. 둘 다 작게 보이는데 왜 다를까? 별이 스스로 밝기를 바꾸고 있는 것일까?"
+image: /assets/img/posts/2026-10-09-stars-twinkle-planets-dont.jpg
 ---
+
+![별은 반짝이는데, 행성은 왜 덜 반짝일까](/assets/img/posts/2026-10-09-stars-twinkle-planets-dont.jpg)
 
 ## 같은 하늘에서 어떤 빛만 흔들리는 이유
 

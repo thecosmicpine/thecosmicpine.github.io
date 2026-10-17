@@ -5,7 +5,10 @@ date: 2026-10-04 15:34:00 +0900
 categories: ["AI와 기술"]
 permalink: /posts/2026-10-04-usb-c-charge-vs-display/
 description: "노트북은 충전되는데, 같은 케이블로 연결한 모니터는 잠잠합니다. 외장 SSD는 인식되는데 파일을 옮기는 속도가 답답합니다. 단자는 분명히 둘 다 USB-C인데요."
+image: /assets/img/posts/2026-10-04-usb-c-charge-vs-display.jpg
 ---
+
+![같은 USB-C인데 왜 충전은 되고 모니터는 안 켜질까](/assets/img/posts/2026-10-04-usb-c-charge-vs-display.jpg)
 
 노트북은 충전되는데, 같은 케이블로 연결한 모니터는 잠잠합니다. 외장 SSD는 인식되는데 파일을 옮기는 속도가 답답합니다. 단자는 분명히 둘 다 USB-C인데요.
 

@@ -5,7 +5,10 @@ date: 2026-09-10 22:25:00 +0900
 categories: ["돈과 산업"]
 permalink: /posts/2026-09-10-manu-sisti-layoff-kdp-ebook-30d/
 description: "해고 뒤 30일 안에 3천 달러를 만든 과정을 따라가며, Reddit에서 문제를 찾고 KDP 전자책으로 파는 흐름을 정리했다."
+image: /assets/img/posts/2026-09-10-manu-sisti-layoff-kdp-ebook-30d.jpg
 ---
+
+![해고 뒤 30일 내 3천 달러를 만든다면: Reddit에서 KDP까지](/assets/img/posts/2026-09-10-manu-sisti-layoff-kdp-ebook-30d.jpg)
 
 [@Manu_Sisti](https://x.com/Manu_Sisti/status/2092246962305450092)의 X 스레드를 학습과 재현에 맞게 다시 구성한 문서다. 원문의 핵심은 오래 지속된 문제를 찾고, 구매가 일어나는 시장인지 확인한 뒤, 전자책으로 제작해 Amazon Kindle Direct Publishing(KDP)에 올리는 흐름이다.
 

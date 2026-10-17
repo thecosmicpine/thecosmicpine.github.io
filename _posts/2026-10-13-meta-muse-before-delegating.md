@@ -5,7 +5,10 @@ date: 2026-10-13 17:13:00 +0900
 categories: ["Muse"]
 permalink: /posts/2026-10-13-meta-muse-before-delegating/
 description: "요즘 IT 뉴스에 \"Meta Muse\"라는 이름이 자주 나온다. 그런데 기사마다 가리키는 대상이 조금씩 다르다. 어떤 기사는 AI 모델 얘기를 하고, 어떤 기사는 앱 얘기를 하고, 또 어떤 기사는 기기 얘기를 한다."
+image: /assets/img/posts/2026-10-13-meta-muse-before-delegating.jpg
 ---
+
+![Meta의 Muse, 이름 하나에 담긴 모델·비서·기기와 일을 맡기기 전 확인할 것](/assets/img/posts/2026-10-13-meta-muse-before-delegating.jpg)
 
 요즘 IT 뉴스에 "Meta Muse"라는 이름이 자주 나온다. 그런데 기사마다 가리키는 대상이 조금씩 다르다. 어떤 기사는 AI 모델 얘기를 하고, 어떤 기사는 앱 얘기를 하고, 또 어떤 기사는 기기 얘기를 한다. 이 글을 읽고 나면 Muse라는 이름 아래 무엇이 있는지, 그리고 이런 'AI 비서'에게 일을 맡기기 전에 무엇을 따져 봐야 하는지 정리할 수 있다.
 
