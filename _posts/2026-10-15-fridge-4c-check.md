@@ -3,6 +3,7 @@ layout: post
 title: "냉장고 적정 온도 4℃, 우리 집 냉장고는 정말 맞을까"
 date: 2026-10-15 11:54:00 +0900
 categories: ["과학의 뒷이야기"]
+tags: ["냉장고온도", "식품안전", "식중독예방", "정전대비"]
 permalink: /posts/2026-10-15-fridge-4c-check/
 description: "냉장고 문에 붙은 설정을 보면 3℃나 '중'이 켜져 있다. 그런데 그 숫자가 지금 냉장고 안 온도라는 보장은 없다. 미국 식품의약국(FDA)은 냉장실을 4℃ 이하, 냉동실을 -18℃로 유지하라고 권하면서, 실제 온도를 알려면 따로 둔 온도계가 가장 확실하다고 말한다."
 image: /assets/img/posts/2026-10-15-fridge-4c-check.jpg
@@ -11,6 +12,11 @@ image: /assets/img/posts/2026-10-15-fridge-4c-check.jpg
 ![냉장고 적정 온도 4℃, 우리 집 냉장고는 정말 맞을까](/assets/img/posts/2026-10-15-fridge-4c-check.jpg)
 
 냉장고 문에 붙은 설정을 보면 3℃나 '중'이 켜져 있다. 그런데 그 숫자가 지금 냉장고 안 온도라는 보장은 없다. 미국 식품의약국(FDA)은 냉장실을 4℃ 이하, 냉동실을 -18℃로 유지하라고 권하면서, 실제 온도를 알려면 따로 둔 온도계가 가장 확실하다고 말한다. 이 글을 따라 하면 우리 집 냉장고가 정말 4℃를 지키는지 확인하고, 어떤 음식을 어디에 둘지 정할 수 있다.
+
+{: .summary }
+> - 냉장실은 **4℃ 이하**, 냉동실은 **-18℃**. 설정 표시가 아니라 **따로 둔 온도계**로 확인한다.
+> - 온도계는 **앞쪽, 잘 보이는 곳**에 두고 **일주일에 한 번** 숫자를 본다.
+> - 남은 음식은 **2시간 안에**(32℃를 넘는 날은 1시간) 냉장고에 넣는다.
 
 ## 왜 하필 4℃인가
 
@@ -26,7 +32,7 @@ image: /assets/img/posts/2026-10-15-fridge-4c-check.jpg
 
 2. **앞쪽, 잘 보이는 곳에 둔다.** FDA가 권하는 자리다. 문을 열자마자 숫자를 읽을 수 있어야 문을 오래 열어 두지 않는다.
 
-![](/assets/img/naver/224442401675-1.jpg)
+   ![](/assets/img/naver/224442401675-1.jpg)
 
 3. **적어도 일주일에 한 번 숫자를 본다.** FDA가 제시하는 확인 주기다. 냉장실이 4℃를 넘거나 냉동실이 -18℃보다 따뜻하면 설정을 한 단계 낮추고 다시 본다.
 
@@ -35,17 +41,31 @@ image: /assets/img/posts/2026-10-15-fridge-4c-check.jpg
 5. **자리를 가려 둔다.** 달걀은 상자째 안쪽에 둔다. 해동 중인 고기는 물이 떨어져 다른 음식에 닿지 않게 하고, 흘린 것은 바로 닦는다. 모두 FDA가 적은 방법이다.
 
 6. **남은 음식은 2시간 안에 넣는다.** FDA의 '2시간 규칙'이다. 기온이 32℃(90℉)를 넘는 날은 1시간이다. 뜨거운 음식을 넣어도 냉장고가 고장 나지 않는다고 FDA는 분명히 한다. 더 빨리 식히려면 작은 용기 여러 개에 나눠 담는다.
+{: .steps }
 
-## 정전이 됐을 때
+## 정전이 되면 온도계가 판단 기준이 된다
 
-온도계가 가장 쓸모 있는 순간이다. FDA는 정전 때 문을 최대한 열지 말라고 한다. 문을 열지 않으면 냉장실은 약 4시간, 가득 찬 냉동실은 약 48시간 동안 적절한 온도를 지킨다. 전기가 돌아오면 온도계를 본다. 냉장실이 4℃ 이하이거나 4℃를 넘은 시간이 2시간 이내라면 안전하다고 본다. 얼음 결정이 남아 있거나 4℃ 이하인 냉동 식품은 다시 얼리거나 조리해도 된다. 얼마나 오래 따뜻했는지 모르면 버리라는 것이 FDA의 결론이다.
+온도계가 가장 쓸모 있는 순간이다. FDA는 정전 때 문을 최대한 열지 말라고 한다. 문을 열지 않으면 냉장실은 약 4시간, 가득 찬 냉동실은 약 48시간 동안 적절한 온도를 지킨다.
+
+<div class="stat-row">
+  <div class="stat"><b>약 4시간</b><span>문을 열지 않은 냉장실이 버티는 시간</span></div>
+  <div class="stat"><b>약 48시간</b><span>가득 찬 냉동실이 버티는 시간</span></div>
+  <div class="stat"><b>2시간 이내</b><span>냉장실이 4℃를 넘어도 안전하다고 보는 한계</span></div>
+</div>
+
+전기가 돌아오면 온도계를 본다. 냉장실이 4℃ 이하이거나 4℃를 넘은 시간이 2시간 이내라면 안전하다고 본다. 얼음 결정이 남아 있거나 4℃ 이하인 냉동 식품은 다시 얼리거나 조리해도 된다.
+
+{: .warning }
+얼마나 오래 따뜻했는지 모르면 버리라는 것이 FDA의 결론이다.
 
 ## 결과: 숫자 두 개만 기억한다
 
 냉장실 4℃ 이하, 냉동실 -18℃. 설정 표시가 아니라 온도계가 이 두 숫자를 가리키는지를 일주일에 한 번 본다. 냉동실 음식에 생기는 회갈색 마른 자국은 품질 문제일 뿐 안전 문제는 아니고, 공기가 안 통하게 단단히 싸면 줄일 수 있다는 것도 FDA의 설명이다. 냄새나 모양이 멀쩡해도 식중독균은 생길 수 있기 때문에, 눈으로 보는 것보다 온도계 숫자가 더 믿을 만하다.
 
-## 출처
+<details markdown="1">
+<summary>출처 2곳</summary>
 
-U.S. FDA, Are You Storing Food Safely? (냉장 4℃·냉동 -18℃, 가전용 온도계와 주 1회 확인, 앞쪽 설치, 2시간 규칙, 달걀 위치, 리스테리아, 냉동 화상, 정전 시 4시간·48시간): [https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely](https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely) (2026-10-15 확인)
+- U.S. FDA, Are You Storing Food Safely? (냉장 4℃·냉동 -18℃, 가전용 온도계와 주 1회 확인, 앞쪽 설치, 2시간 규칙, 달걀 위치, 리스테리아, 냉동 화상, 정전 시 4시간·48시간): [https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely](https://www.fda.gov/consumers/consumer-updates/are-you-storing-food-safely) (2026-10-15 확인)
+- U.S. FDA, Refrigerator Thermometers - Cold Facts about Food Safety (실온에서 20분마다 두 배, 조절기가 실제 온도를 보여 주는 경우 드물어, 과적재 금지, 뜨거운 음식과 작은 용기, 정전 후 판단): [https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety](https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety) (2026-10-15 확인)
 
-U.S. FDA, Refrigerator Thermometers - Cold Facts about Food Safety (실온에서 20분마다 두 배, 조절기가 실제 온도를 보여 주는 경우 드물어, 과적재 금지, 뜨거운 음식과 작은 용기, 정전 후 판단): [https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety](https://www.fda.gov/food/buy-store-serve-safe-food/refrigerator-thermometers-cold-facts-about-food-safety) (2026-10-15 확인)
+</details>
