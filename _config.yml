@@ -56,6 +56,15 @@ defaults:
       path: "sources"
     values:
       sitemap: false
+  # 검색엔진 소유 확인 파일은 사이트맵에서 뺀다
+  - scope:
+      path: "google*.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "naver*.html"
+    values:
+      sitemap: false
 
 # 검색 엔진 소유 확인 코드. 값을 넣으면 <head>에 meta가 들어간다
 site_verification:
