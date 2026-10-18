@@ -99,7 +99,7 @@ encoding: utf-8
 
 # 경량 방문 카운터 (사이드바 메뉴 하단)
 visitor_counter:
-  enabled: false
+  enabled: true
   script_url: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
 
 # 댓글 (Utterances — GitHub Issues)

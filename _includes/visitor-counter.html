@@ -8,6 +8,20 @@
       <span>Page PV: <strong id="busuanzi_value_page_pv">-</strong></span>
       {%- endif -%}
       <script async src="{{ site.visitor_counter.script_url }}"></script>
+      <script>
+        // busuanzi는 Referer가 없으면 여러 사이트 합산값(수천만)을 돌려준다. 그런 값이면 숫자를 감춘다.
+        (function () {
+          var tries = 0;
+          var t = setInterval(function () {
+            var el = document.getElementById('busuanzi_value_site_pv');
+            var n = el ? parseInt(el.textContent.replace(/,/g, ''), 10) : NaN;
+            if (!isNaN(n)) {
+              clearInterval(t);
+              if (n > 10000000) { el.closest('.site-stats-list').style.display = 'none'; }
+            } else if (++tries > 40) { clearInterval(t); }
+          }, 250);
+        })();
+      </script>
     </div>
   </li>
 </ul>
