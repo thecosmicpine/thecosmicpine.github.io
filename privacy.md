@@ -13,6 +13,7 @@ TheCosmicPine(https://thecosmicpine.github.io/, 이하 "블로그")는 방문자
 블로그는 회원가입 기능이 없어 이름, 이메일 같은 개인정보를 직접 수집하지 않습니다.
 다만 아래 제3자 서비스가 쿠키 등을 통해 접속 정보(IP 주소, 브라우저 종류, 방문 페이지, 방문 시각 등)를 자동으로 수집할 수 있습니다.
 - 댓글은 GitHub 계정으로 로그인해 남기는 utterances(GitHub Issues)를 사용합니다. 댓글과 GitHub 계정 정보는 GitHub에 저장되며 블로그가 따로 보관하지 않습니다.
+- 방문자 수 집계에 busuanzi 카운터를 사용하며, 이 서비스가 방문 기록을 집계할 수 있습니다.
 
 
 ## 2. Google AdSense와 쿠키
