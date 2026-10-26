@@ -104,7 +104,7 @@ encoding: utf-8
 # 경량 방문 카운터 (사이드바 메뉴 하단)
 visitor_counter:
   enabled: true
-  script_url: "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
+  script_url: "https://events.vercount.one/js"  # busuanzi 서버가 502/타임아웃이라 호환 대체 서비스로 교체
 
 # 댓글 (Utterances — GitHub Issues)
 comments:

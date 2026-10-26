@@ -9,7 +9,7 @@
       {%- endif -%}
       <script async src="{{ site.visitor_counter.script_url }}"></script>
       <script>
-        // busuanzi는 Referer가 없으면 여러 사이트 합산값(수천만)을 돌려준다. 그런 값이면 숫자를 감춘다.
+        // 카운터(vercount, busuanzi 호환 ID)가 비정상 합산값(수천만)을 돌려주면 숫자를 감춘다.
         (function () {
           var tries = 0;
           var t = setInterval(function () {
